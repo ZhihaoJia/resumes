@@ -1,4 +1,4 @@
-Resume
+Resumes
 ======
 
 Resume repository
