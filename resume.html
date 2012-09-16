@@ -101,9 +101,6 @@
             h5 {
                 font-size:      20px;
             }
-            a {
-                font-weight:    bold;
-            }
 
             .fg_ddgrey, .fg_ddgrey * {
                 color:          rgb(40, 40, 40);
@@ -189,6 +186,9 @@
 
                 font-size:          1.2em;
                 text-shadow:        1px 1px rgb(255, 255, 255);
+            }
+            #content a {
+                font-weight:        bold;
             }
             #content a:hover {
                 text-decoration:    underline;
@@ -375,6 +375,7 @@
             }
             #education .box header .time {
                 margin-top: 2px;
+            }
 
             /* DISTINCTIONS */
 
@@ -459,6 +460,9 @@
                 #content {
                     padding-top:            0 !important;
                 }
+                #about {
+                    margin-top:             0 !important;
+                }
                 #attributes {
                     height:                 88px !important;
                 }
@@ -494,7 +498,7 @@
                         /* Scroll animation for top link */
                         $('#menu h3 a').click( function(event) {
                             event.preventDefault();
-                            $('html').animate( {
+                            $('html, body').animate( {
                                 scrollTop: 0
                             }, 1000, 'swing');
                         });
@@ -502,7 +506,7 @@
                         $('#menu .section_link').click( function(event) {
                             event.preventDefault();
                             var targetAnchor = $( 'a[name=' + this.innerHTML.toLowerCase() + ']' ).eq(0);
-                            $('html').animate( {
+                            $('html, body').animate( {
                                 scrollTop: targetAnchor.offset().top - MENU_HEIGHT 
                             }, 1000, 'swing' );
                         });
