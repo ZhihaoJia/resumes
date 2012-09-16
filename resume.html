@@ -151,6 +151,7 @@
             #menu {
                 position:       fixed;
                 top:            0;
+                left:           0;
                 width:          100%;
                 z-index:        10;
                 white-space:    nowrap;
@@ -586,7 +587,48 @@
                 }
             }
         </script>
-        
+
+        <!--[if lt IE 9]>
+        <script type="text/javascript">
+            document.createElement('nav');
+            document.createElement('section');
+            document.createElement('article');
+            document.createElement('aside');
+            document.createElement('header');
+            document.createElement('footer');
+            document.createElement('hgroup');
+        </script>
+
+        <style type="text/css">
+            header
+            ,nav
+            ,section
+            ,article
+            ,aside
+            ,footer
+            ,hgroup {
+                display: block;
+            }
+        </style>
+        <![endif]-->
+
+        <!--[if IE 7]>
+        <style type="text/css">
+            #about #attributes {
+                margin-left:        0;
+            }
+            .box header .location {
+                margin-left:        0;
+            }
+            .box header .time {
+                float:              none;
+            }
+            #education .box header .time {
+                float:              none;
+                margin-top:         0;
+            }
+        </style>
+        <![endif]-->
     </head>
 
     <body>
@@ -692,8 +734,8 @@
                         <h5 class="time fg_grey">Apr 2012 - Aug 2012</h5>
                     </header>
                     <ul class="details fg_llgrey bg_grey">
-                        <li>Made major enhancements to the internal issue-management and bug-tracking website on both the back and front-facing sides.</li>
-                        <li>Maintained the internal service and terminal administration, the audit and synchronization trail, and the issue-management websites.</li>
+                        <li>Made major enhancements to the internal issue-management and problem-tracking website on both the back and front-facing sides.</li>
+                        <li>Maintained the internal service and terminal administration, audit and synchronization trail, and issue-management websites.</li>
                         <li>Conducted research into third-party technologies and analyzed the feasibility of integrating the technologies with company products. Presented findings to members of multiple departments and submitted a manual and report detailing the results of the investigation.</li>
                     </ul>
                 </article>
@@ -895,7 +937,7 @@
                         Particular interest in user interface design and optimization.
                     </li>
                     <li>
-                        Active participant on <a href="http://stackoverflow.com">StackOverflow</a>, with focus on <span class="item">HTML</span>, <span class="item">CSS</span>, <span class="item">JavaScript</span>, and <span class="item">jQuery</span>.
+                        Active participant on <a href="http://stackoverflow.com/users/1405830/">StackOverflow</a>, with focus on <span class="item">HTML</span>, <span class="item">CSS</span>, <span class="item">JavaScript</span>, and <span class="item">jQuery</span>.
                     </li>
                 </ul>
             </section>
