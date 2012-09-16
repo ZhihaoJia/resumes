@@ -146,6 +146,7 @@
                 top:            0;
                 width:          100%;
                 z-index:        10;
+                white-space:    nowrap;
 
                 opacity:        0.95;
                 text-shadow:    -1px -1px rgb(0, 0, 0);
@@ -160,7 +161,7 @@
                 float:          left;
             }
             #menu ul {
-                float: right;
+                float:          right;
             }
             #menu h3 > a {
                 font-size:      32px;
@@ -288,6 +289,7 @@
             }
             .box header .time {
                 float:              right;
+                margin-top:         8px;
             }
 
             .bi_box {
@@ -308,6 +310,7 @@
                 text-shadow:        1px 1px rgb(255, 255, 255);
 
                 font-size:          0.8em;
+                white-space:        nowrap;
 
                 -ms-border-radius:  4px;
                 -moz-border-radius: 4px;
@@ -377,6 +380,92 @@
             /* INTERESTS */
             #interests > div {
                 margin-bottom:  16px;
+            }
+
+
+            /* Print media */
+            @media print {
+                * {
+                    background:             white !important;
+                    text-shadow:            none !important;
+
+                    -ms-border-radius:      0 !important;
+                    -moz-border-radius:     0 !important;
+                    -webkit-border-radius:  0 !important;
+                    -o-border-radius:       0 !important;
+                    border-radius:          0 !important;
+
+                    -ms-box-shadow:         none !important;
+                    -moz-box-shadow:        none !important;
+                    -webkit-box-shadow:     none !important;
+                    -o-box-shadow:          none !important;
+                    box-shadow:             none !important;
+                }
+                h1 {
+                    font-size:              88px !important;
+                    line-height:            88px !important;
+                }
+                h2 {
+                    font-size:              36px !important;
+                }
+                h4 {
+                    font-size:              24px !important;
+                }
+                h5 {
+                    font-size:              18px !important;
+                }
+
+                .fg_llgrey, .fg_llgrey * {
+                    color:                  rgb(60, 60, 60) !important;
+                }
+
+                .section {
+                    margin:                 36px 0 !important;
+                }
+                .section h2 {
+                    margin:                 18px 0 !important;
+                }
+                .divider {
+                    display:                none !important;
+                }
+
+                .box .details, .bi_box .details, .tri_box .details {
+                    padding:                0 !important;
+                }
+                .bi_box .label, .tri_box .label {
+                    margin-bottom:          6px !important;
+                    text-align:             left !important;
+                }
+                .box {
+                    margin:                 18px 0 !important;
+                }
+                .bi_box {
+                    height:                 12em !important;
+                }
+                .tri_box {
+                    height:                 13em !important;
+                }
+
+                .item {
+                    padding:                0 !important;
+                    font-size:              1em !important;
+                }
+
+                #menu {
+                    display:                none !important;
+                }
+                #content {
+                    padding-top:            0 !important;
+                }
+                #attributes {
+                    height:                 88px !important;
+                }
+                #attributes ul {
+                    margin-bottom:          6px !important;
+                }
+                #interests > div {
+                    margin-bottom:          0 !important;
+                }
             }
         </style>
 
@@ -657,21 +746,21 @@
                     <ul class="details fg_llgrey bg_grey">
                         <li>
                             Completed:
-                            <span class="item">Designing Functional Programs</span>
-                            <span class="item">Elementary Algorithm Design &amp; Data Abstraction</span>
-                            <span class="item">Logic and Computation</span>
-                            <span class="item">Object-Oriented Software Development</span>
-                            <span class="item">Foundations of Sequential Programming</span>
-                            <span class="item">Introduction to Combinatorics</span>
-                            <span class="item">Data Structures and Data Management</span>
-                            <span class="item">Computer Organization and Design</span>
-                            <span class="item">Resources in Bioinformatics</span>
+                            <span class="item">Designing Functional Programs</span>,
+                            <span class="item">Elementary Algorithm Design &amp; Data Abstraction</span>,
+                            <span class="item">Logic and Computation</span>,
+                            <span class="item">Object-Oriented Software Development</span>,
+                            <span class="item">Foundations of Sequential Programming</span>,
+                            <span class="item">Introduction to Combinatorics</span>,
+                            <span class="item">Data Structures and Data Management</span>,
+                            <span class="item">Computer Organization and Design</span>,
+                            <span class="item">Resources in Bioinformatics</span>.
                         </li>
                         <li>
                             Enrolled in:
-                            <span class="item">Algorithms</span>
-                            <span class="item">Numerical Computation</span>
-                            <span class="item">Operating Systems</span>
+                            <span class="item">Algorithms</span>,
+                            <span class="item">Numerical Computation</span>,
+                            <span class="item">Operating Systems</span>.
                         </li>
                     </ul>
                 </article>
