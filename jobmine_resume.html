@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Zhihao Jia - Resume</title>
+
+        <meta name="author" content="Zhihao Jia">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Resume of Zhihao Jia.">
+        <meta name="keywords" content="zhihao, jia, resume">
+        <meta name="viewport" content="width=400, initial-scale=1">
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" onload="isJqueryLoaded = 1"></script>
+        
+        <!-- CSS Reset, based off of the Meyer CSS Reset v2.0b1 -->
+        <style type="text/css">
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+
+            ins {
+                text-decoration: underline;
+            }
+            del {
+                text-decoration: line-through;
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+        </style>
+
+        <!-- Styling -->
+        <style type="text/css">
+            /* GLOBAL */
+            strong {
+                font-weight:    bold;
+            }
+            em {
+                font-style:     italic;
+            }
+            body {
+                font-family:    "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                background:     rgb(230, 230, 230);
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-weight:    bold;
+            }
+            h1 {
+                font-size:      100px;
+            }
+            h2 {
+                font-size:      48px;
+            }
+            h3 {
+                font-size:      32px;
+            }
+            h4 {
+                font-size:      26px;
+            }
+            h5 {
+                font-size:      20px;
+            }
+
+            .fg_ddgrey,
+            .fg_ddgrey * {
+                color:          rgb(40, 40, 40);
+            }
+            .fg_dgrey,
+            .fg_dgrey * {
+                color:          rgb(60, 60, 60);
+            }
+            .fg_grey,
+            .fg_grey * {
+                color:          rgb(120, 120, 120);
+            }
+            .fg_lgrey,
+            .fg_lgrey * {
+                color:          rgb(180, 180, 180);
+            }
+            .fg_llgrey,
+            .fg_llgrey * {
+                color:          rgb(230, 230, 230);
+            }
+            .bg_ddgrey,
+            .bg_ddgrey * {
+                background:     rgb(40, 40, 40);
+            }
+            .bg_dgrey,
+            .bg_dgrey * {
+                background:     rgb(60, 60, 60);
+            }
+            .bg_grey,
+            .bg_grey * {
+                background:     rgb(120, 120, 120);
+            }
+            .bg_lgrey,
+            .bg_lgrey * {
+                background:     rgb(180, 180, 180);
+            }
+            .bg_llgrey,
+            .bg_llgrey * {
+                background:     rgb(230, 230, 230);
+            }
+
+            .nowrap {
+                white-space:    nowrap;
+            }
+
+            /* MENU */
+            #menu {
+                position:       fixed;
+                top:            0;
+                left:           0;
+                width:          100%;
+                z-index:        10;
+                white-space:    nowrap;
+
+                opacity:        0.95;
+                text-shadow:    -1px -1px rgb(0, 0, 0);
+            }
+            #menu:hover {
+                opacity:        1; /* Chrome seems to lower the font weight if opacity <1 - fix by setting opacity to 0.99 and increasing weight */
+            }
+            #menu a:hover {
+                color:          rgb(230, 230, 230);
+            }
+            #menu h3,
+            #menu li {
+                float:          left;
+            }
+            #menu ul {
+                float:          right;
+            }
+            #menu h3 > a {
+                font-size:      32px;
+                font-weight:    bold;
+                line-height:    48px;
+            }
+            #menu li > a {
+                font-size:      24px;
+                line-height:    48px;
+
+                border-left:    2px solid rgb(200, 200, 200);
+            }
+            #menu h3,
+            #menu li > a {
+                padding:        0 16px;
+            }
+            
+            /* CONTENT */
+            #content {
+                width:              1000px;
+                min-width:          1000px;
+
+                margin-left:        auto;
+                margin-right:       auto;
+                padding-top:        48px;
+
+                font-size:          1.2em;
+                text-shadow:        1px 1px rgb(255, 255, 255);
+            }
+            #content a {
+                font-weight:        bold;
+            }
+            #content a:hover {
+                text-decoration:    underline;
+            }
+
+            .section {
+                margin:             48px 0;
+            }
+            .section h2 {
+                margin:             24px 0;
+            }
+
+            .divider {
+                margin:             48px 0;
+                width:              100%;
+            }
+            .divider .line {
+                height:             2px;
+
+                background:         rgb(100, 100, 100);
+                background:         -ms-linear-gradient(left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
+                background:         -moz-linear-gradient(left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
+                background:         -webkit-linear-gradient(left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
+                background:         -o-linear-gradient(left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
+                background:         linear-gradient(left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
+            }
+            .divider .shadow {
+                height:             1px;
+
+                background:         rgb(255, 255, 255);
+                background:         -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+                background:         -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+                background:         -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+                background:         -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+                background:         linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .box li,
+            .bi_box li,
+            .tri_box li,
+            .details li {
+                margin:             1px 0;
+                line-height:        1.2em;
+                list-style-type:    square;
+            }
+            .box .details,
+            .bi_box .details,
+            .tri_box .details {
+                height:             100%;
+                width:              100%;
+                padding:            16px 36px;
+
+                text-shadow:        -1px -1px rgb(0, 0, 0);
+
+                -ms-box-sizing:     border-box;
+                -moz-box-sizing:    border-box;
+                -webkit-box-sizing: border-box;
+                -o-box-sizing:      border-box;
+                box-sizing:         border-box;                
+
+                -ms-box-shadow:     1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
+                -moz-box-shadow:    1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
+                -webkit-box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
+                -o-box-shadow:      1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
+                box-shadow:         1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
+            }
+
+            .bi_box,
+            .tri_box {
+                display:            inline-block;
+                margin-left:        20px;
+                vertical-align:     top;
+
+                overflow: hidden;
+            }
+            .bi_box:first-child,
+            .tri_box:first-child {
+                margin-left:        0;
+            }
+            .bi_box .label,
+            .tri_box .label {
+                margin-bottom:      12px;
+                text-align:         center;
+            }
+            .bi_box .details,
+            .tri_box .details {
+                height:             100%;
+                height:             -ms-calc(100% - 38px);
+                height:             -moz-calc(100% - 38px);
+                height:             -webkit-calc(100% - 38px);
+                height:             -o-calc(100% - 38px);
+            }
+
+            .box {
+                margin:             24px 0;
+            }
+            .box header {
+                margin:             8px 0;
+            }
+            .box header .position,
+            .box header .location {
+                display:            inline-block;
+            }
+            .box header .location {
+                margin-left:        12px;
+            }
+            .box header .time {
+                float:              right;
+                margin-top:         8px;
+            }
+
+            .bi_box {
+                height:             14em;
+                width:              486px;
+            }
+
+            .tri_box {
+                height:             16em;
+                width:              316px;
+            }
+
+            .item {
+                padding:            0.1em 0.4em;
+                
+                color:              rgb(60, 60, 60);
+                background:         rgb(180, 180, 180);
+                text-shadow:        1px 1px rgb(255, 255, 255);
+
+                font-size:          0.8em;
+                white-space:        nowrap;
+
+                -ms-border-radius:  4px;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -o-border-radius:   4px;
+                border-radius:      4px;
+
+                -ms-box-shadow:     1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
+                -moz-box-shadow:    1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
+                -webkit-box-shadow: 1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
+                -o-box-shadow:      1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
+                box-shadow:         1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
+            }
+
+            /* ABOUT */
+            #about {
+                margin:         24px 0;
+                text-align:     left;
+            }
+            #about h1,
+            #about #attributes {
+                display:        inline-block;
+            }
+            #about h1 {
+                text-transform: uppercase;
+                line-height:    100px;
+            }
+            #about #attributes {
+                position:       relative;
+                height:         100px;
+                margin-left:    12px;
+                vertical-align: top;
+            }
+            #about #attributes ul {
+                position:       absolute;
+                left:           0;
+                bottom:         0;
+                margin-bottom:  8px;
+            }
+            #about #attributes li,
+            #about #attributes a {
+                font-size:      20px;
+                font-weight:    bold;
+                line-height:    24px;
+                letter-spacing: 1px;
+            }
+            #about #occupation {
+                font-weight:    bold;
+            }
+
+            /* SKILLS */
+
+
+            /* EXPERIENCE */
+
+
+            /* EDUCATION */
+            #education .box header .position {
+                display:        block;
+            }
+            #education .box header .location {
+                display:        inline-block;
+                margin-left:    0;
+            }
+            #education .box header .time {
+                margin-top: 2px;
+            }
+
+            /* DISTINCTIONS */
+
+
+            /* INTERESTS */
+            #interests > div {
+                margin-bottom:  16px;
+            }
+
+
+            /* Print media */
+            @media print {
+                * {
+                    background:             white !important;
+                    text-shadow:            none !important;
+
+                    -ms-border-radius:      0 !important;
+                    -moz-border-radius:     0 !important;
+                    -webkit-border-radius:  0 !important;
+                    -o-border-radius:       0 !important;
+                    border-radius:          0 !important;
+
+                    -ms-box-shadow:         none !important;
+                    -moz-box-shadow:        none !important;
+                    -webkit-box-shadow:     none !important;
+                    -o-box-shadow:          none !important;
+                    box-shadow:             none !important;
+                }
+                h1 {
+                    font-size:              88px !important;
+                    line-height:            88px !important;
+                }
+                h2 {
+                    font-size:              36px !important;
+                }
+                h4 {
+                    font-size:              24px !important;
+                }
+                h5 {
+                    font-size:              18px !important;
+                }
+
+                .fg_llgrey,
+                .fg_llgrey * {
+                    color:                  rgb(60, 60, 60) !important;
+                }
+
+                .section {
+                    margin:                 36px 0 !important;
+                }
+                .section h2 {
+                    margin:                 18px 0 !important;
+                }
+                .divider {
+                    display:                none !important;
+                }
+
+                .box .details,
+                .bi_box .details,
+                .tri_box .details {
+                    padding:                0 !important;
+                }
+                .bi_box .label,
+                .tri_box .label {
+                    margin-bottom:          6px !important;
+                    text-align:             left !important;
+                }
+                .box {
+                    margin:                 18px 0 !important;
+                }
+                .bi_box {
+                    height:                 12em !important;
+                }
+                .tri_box {
+                    height:                 13em !important;
+                }
+
+                .item {
+                    padding:                0 !important;
+                    font-size:              1em !important;
+                }
+
+                #menu {
+                    display:                none !important;
+                }
+                #content {
+                    padding-top:            0 !important;
+                }
+                #about {
+                    margin-top:             0 !important;
+                }
+                #attributes {
+                    height:                 88px !important;
+                }
+                #attributes ul {
+                    margin-bottom:          6px !important;
+                }
+                #interests > div {
+                    margin-bottom:          0 !important;
+                }
+            }
+        </style>
+
+        <!-- There was supposed to be JavaScript here but Jobmine stripped it out -->
+
+        <!-- The part below is supposed to support IE versions under 9, but it required JavaScript so it likely will not work now -->
+        
+        <!--[if lt IE 9]>
+        <style type="text/css">
+            header
+            ,nav
+            ,section
+            ,article
+            ,aside
+            ,footer
+            ,hgroup {
+                display: block;
+            }
+        </style>
+        <![endif]-->
+
+        <!--[if IE 7]>
+        <style type="text/css">
+            #about #attributes {
+                margin-left:        0;
+            }
+            .box header .location {
+                margin-left:        0;
+            }
+            .box header .time {
+                float:              none;
+            }
+            #education .box header .time {
+                float:              none;
+                margin-top:         0;
+            }
+        </style>
+        <![endif]-->
+    </head>
+
+    <body>
+        <nav id="menu" class="fg_lgrey bg_ddgrey">
+            <h3><a id="home_link" href="http://zhihaojia.com">Zhihao Jia</a></h3>
+            <ul>
+                <li><a id="skills_link" class="section_link" href="#skills">Skills</a></li>
+                <li><a id="experience_link" class="section_link" href="#experience">Experience</a></li>
+                <li><a id="education_link" class="section_link" href="#education">Education</a></li>
+                <li><a id="distinctions_link" class="section_link" href="#distinctions">Distinctions</a></li>
+                <li><a id="interests_link" class="section_link" href="#interests">Interests</a></li>
+            </ul>
+        </nav>
+        
+        <section id="content" class="fg_dgrey">
+            <a id="top_anchor"></a>
+
+            <section id="about" class="section">
+                <h1>Zhihao Jia</h1>
+
+                <div id="attributes" class="fg_lgrey">
+                    <ul>
+                        <li><a href="http://zhihaojia.com">zhihaojia.com</a></li>
+                        <li>(226) 808-9105</li>
+                        <li><a href="mailto:contact@zhihaojia.com">contact@zhihaojia.com</a></li>
+                    </ul>
+                </div>
+
+                <div id="occupation" class="fg_grey">
+                    3B <a href="http://www.cs.uwaterloo.ca">Computer Science</a>, <a href="http://uwaterloo.ca">University of Waterloo</a>
+                </div>
+            </section>
+
+            <div class="divider">
+                <div class="line"></div>
+                <div class="shadow"></div>
+            </div>
+
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+
+                <div class="nowrap">
+                    <section id="languages" class="tri_box">
+                        <h4 class="fg_grey label">Languages</h4>
+                        <ul class="details fg_llgrey bg_grey">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript (jQuery)</li>
+                            <li>C++</li>
+                            <li>C# (.NET)</li>
+                            <li>Visual Basic (ASP.NET)</li>
+                            <li>Scheme</li>
+                            <li>SQL</li>
+                            <li>XML</li>
+                        </ul>
+                    </section>
+
+                    <section id="tools" class="tri_box">
+                        <h4 class="fg_grey label">Tools</h4>
+                        <ul class="details fg_llgrey bg_grey">
+                            <li>Vim</li>
+                            <li>Visual Studio</li>
+                            <li>Eclipse</li>
+                            <li>Git</li>
+                            <li>Mercurial</li>
+                            <li>SVN (Subversion)</li>
+                            <li>VSS (Visual SourceSafe)</li>
+                            <li>GIMP</li>
+                        </ul>
+                    </section>
+
+                    <section id="technologies" class="tri_box">
+                        <h4 class="fg_grey label">Technologies</h4>
+                        <ul class="details fg_llgrey bg_grey">
+                            <li>Bash</li>
+                            <li>AJAX</li>
+                            <li>JSON</li>
+                            <li>Apache</li>
+                            <li>IIS</li>
+                            <li>MySQL</li>
+                            <li>SQL Server</li>
+                            <li>Oracle</li>
+                            <li>DB2</li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+
+            <div class="divider">
+                <div class="line"></div>
+                <div class="shadow"></div>
+            </div>
+
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                
+                <article class="box">
+                    <header>
+                        <h4 class="position">Web Developer</h4>
+                        <h5 class="location fg_lgrey">(SkyWave Mobile Communications)</h5>
+                        <h5 class="time fg_grey">Apr 2012 - Aug 2012</h5>
+                    </header>
+                    <ul class="details fg_llgrey bg_grey">
+                        <li>Made major enhancements to the internal issue-management website, such as adding user administration functionality and complex search querying and management capabilities.</li>
+                        <li>Helped maintain both the back and front-facing sides of the internal service and terminal administration, audit and synchronization trail, and issue-management websites.</li>
+                        <li>Conducted research into third-party technologies and analyzed the feasibility of integrating the technologies with company products. Presented findings to members of multiple departments and submitted a report detailing the results of the investigation.</li>
+                        <li>Most heavily used languages included a combination of VB.NET, HTML, CSS, and JS.</li>
+                    </ul>
+                </article>
+
+                <article class="box">
+                    <header>
+                        <h4 class="position">Software Developer</h4>
+                        <h5 class="location fg_lgrey">(SkyWave Mobile Communications)</h5>
+                        <h5 class="time fg_grey">Aug 2011 - Dec 2011</h5>
+                    </header>
+                    <ul class="details fg_llgrey bg_grey">
+                        <li>Involved in the redesign of the internal issue-management and tracking system.</li>
+                        <li>Wrote both the front-end and back-end of the website used to track issues, tasks, enhancements, and customer queries.</li>
+                        <li>Designed, implemented, and deployed plugins for multiple source-control systems, such as Microsoft Visual SourceSafe and Tortoise Subversion, for integration with the internal issue-management system.</li>
+                        <li>Largely used Microsoft Technologies such as .NET, ASP.NET, and SQL Server for all programming-related activities.</li>
+                    </ul>
+                </article>
+
+                <article class="box">
+                    <header>
+                        <h4 class="position">Technical Analayst</h4>
+                        <h5 class="location fg_lgrey">(IBM Canada Limited)</h5>
+                        <h5 class="time fg_grey">Jan 2011 - Apr 2011</h5>
+                    </header>
+                    <ul class="details fg_llgrey bg_grey">
+                        <li>Conducted black box testing and ran simulations for the Cognos 8 BI product in the identification of software defects and enhancement specifications.</li>
+                        <li>Designed business intelligence reports and modeled relational data to meet business requirements in the field of business intelligence and analytics.</li>
+                        <li>Wrote and published troubleshooting documentation for the IBM Cognos knowledge base.</li>
+                        <li>Provided technical support for live production and test systems to resolve customer issues within designated time limits.</li>
+                    </ul>
+                </article>
+
+                <article class="box">
+                    <header>
+                        <h4 class="position">Software Quality Assurance Specialist</h4>
+                        <h5 class="location fg_lgrey">(Ramsoft Incorporated)</h5>
+                        <h5 class="time fg_grey">May 2010 - Aug 2010</h5>
+                    </header>
+                    <ul class="details fg_llgrey bg_grey">
+                        <li>Developed and conducted multiple levels of testing for software tools, interfaces, and integrated third-party software within the field of radiology and other medical imaging practices.</li>
+                        <li>Tracked, recorded, and updated documentation for technical procedures and guidelines.</li>
+                        <li>Troubleshooted and resolved customer issues for the PowerServer RIS/PACS system.</li>
+                        <li>Coordinated activities with system integrators, software developers, and customer service staff to better carry out tasks and assignments.</li>
+                    </ul>
+                </article>
+
+                <article class="box">
+                    <header>
+                        <h4 class="position">Tutor</h4>
+                        <h5 class="location fg_lgrey">(Merivale High School)</h5>
+                        <h5 class="time fg_grey">Oct 2006 - Jun 2009</h5>
+                    </header>
+                    <ul class="details fg_llgrey bg_grey">
+                        <li>Taught principles and concepts relating to various academic fields, with specialization in both mathematics and the sciences.</li>
+                        <li>Offered guidance in test preparation and provided review of past notes, tests, and assignments.</li>
+                    </ul>
+                </article>
+
+                <article class="box">
+                    <header>
+                        <h4 class="position">Robotics Club Member</h4>
+                        <h5 class="location fg_lgrey">(Merivale High School)</h5>
+                        <h5 class="time fg_grey">Sep 2005 - Jan 2009</h5>
+                    </header>
+                    <ul class="details fg_llgrey bg_grey">
+                        <li>Constructed and programmed robots of varying functionality, both individually and as part of a group. Examples include blimps, line-following robots, and semi-bipedal walkers.</li>
+                        <li>Participated in intra-club competitions with robots constructed.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <div class="divider">
+                <div class="line"></div>
+                <div class="shadow"></div>
+            </div>
+
+            <section id="education" class="section">
+                <h2>Education</h2>
+
+                <article class="box">
+                    <header>
+                        <h4 class="position">Candidate for Bachelor of Computer Science - Honours Bioinformatics Option</h4>
+                        <h5 class="location fg_lgrey">(University of Waterloo)</h5>
+                        <h5 class="time fg_grey">In Progress</h5>
+                    </header>
+                    <ul class="details fg_llgrey bg_grey">
+                        <li>
+                            Completed:
+                            <span class="item">Designing Functional Programs</span>,
+                            <span class="item">Elementary Algorithm Design &amp; Data Abstraction</span>,
+                            <span class="item">Logic and Computation</span>,
+                            <span class="item">Object-Oriented Software Development</span>,
+                            <span class="item">Foundations of Sequential Programming</span>,
+                            <span class="item">Introduction to Combinatorics</span>,
+                            <span class="item">Data Structures and Data Management</span>,
+                            <span class="item">Computer Organization and Design</span>,
+                            <span class="item">Resources in Bioinformatics</span>.
+                        </li>
+                        <li>
+                            Enrolled in:
+                            <span class="item">Algorithms</span>,
+                            <span class="item">Numerical Computation</span>,
+                            <span class="item">Operating Systems</span>.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <div class="divider">
+                <div class="line"></div>
+                <div class="shadow"></div>
+            </div>
+            
+            <section id="distinctions" class="section">
+                <h2>Distinctions</h2>
+
+                <article class="box">
+                    <header>
+                        <h4 class="position">President's Scholarship of Distinction</h4>
+                        <h5 class="location fg_lgrey">(University of Waterloo)</h5>
+                        <h5 class="time fg_grey">Sep 2009</h5>
+                    </header>
+                    <ul class="details fg_llgrey bg_grey">
+                        <li>Early May admission average of 95%+ for students admitted to full-time, first-year degree studies at the University of Waterloo who are beginning post-secondary studies for the first time in fall 2009.</li>
+                    </ul>
+                </article>
+
+                <article class="box">
+                    <header>
+                        <h4 class="position">Honours Over 90% Silver Medal</h4>
+                        <h5 class="location fg_lgrey">(Merivale High School)</h5>
+                        <h5 class="time fg_grey">Sep 2005 - Jun 2009</h5>
+                    </header>
+                    <ul class="details fg_llgrey bg_grey">
+                        <li>Academic excellence with an average of over 90% in all four years of high school.</li>
+                    </ul>
+                </article>
+
+                <article class="box">
+                    <header>
+                        <h4 class="position">Gifted Student Designation</h4>
+                        <h5 class="location fg_lgrey">(Ottawa-Carleton District School Board)</h5>
+                        <h5 class="time fg_grey">2000 - Present</h5>
+                    </header>
+                    <ul class="details fg_llgrey bg_grey">
+                        <li>Scored in the top 1% on the Canada-wide CCAT (Canadian Cognitive Abilities Test).</li>
+                    </ul>
+                </article>
+            </section>
+
+            <div class="divider">
+                <div class="line"></div>
+                <div class="shadow"></div>
+            </div>
+
+            <section id="interests" class="section">
+                <h2>Interests</h2>
+
+                <div class="nowrap">
+                    <section id="activities" class="bi_box">
+                        <h4 class="fg_grey label">Activities</h4>
+                        <ul class="details fg_llgrey bg_grey">
+                            <li>Graphic design</li>
+                            <li>Music</li>
+                            <li>Reading</li>
+                            <li>Table tennis</li>
+                            <li>Go/baduk/weiqi</li>
+                            <li>Starcraft 2</li>
+                            <li>Om nom nom</li>
+                        </ul>
+                    </section>
+
+                    <section id="following" class="bi_box">
+                        <h4 class="fg_grey label">Following</h4>
+                        <ul class="details fg_llgrey bg_grey">
+                            <li>Hacker News</li>
+                            <li>TechCrunch</li>
+                            <li>VentureBeat</li>
+                            <li>Mashable!</li>
+                            <li>Wired</li>
+                            <li>Bits</li>
+                            <li>GigaOM</li>
+                            <li>Popular Science</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <ul class="details">
+                    <li>
+                        Reading:
+                        <span class="item"><em>Don't Make Me Think</em> - Steve Krug</span>,
+                        <span class="item"><em>Introduction to Algorithms 3ED</em> - Cormen et. al.</span>.
+                    </li>
+                    <li>
+                        Particular interest in user interface design and optimization, as well as front-end web technologies.
+                    </li>
+                    <li>
+                        Active participant on <a href="http://stackoverflow.com/users/1405830/">StackOverflow</a>, with focus on <span class="item">HTML</span>, <span class="item">CSS</span>, <span class="item">JavaScript</span>, and <span class="item">jQuery</span>.
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </body>
+
+</html>
