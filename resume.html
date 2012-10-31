@@ -264,7 +264,7 @@
                 -moz-box-sizing:    border-box;
                 -webkit-box-sizing: border-box;
                 -o-box-sizing:      border-box;
-                box-sizing:         border-box;                
+                box-sizing:         border-box;
 
                 -ms-box-shadow:     1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
                 -moz-box-shadow:    1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
@@ -534,6 +534,11 @@
                     
                     /* jQuery $(document).ready() is not the same as document.readyState, so use below to be safe */
                     $(function() {
+                        /* Change phone number link to work better on desktops */
+                        if( !$.browser.mobile ) {
+                            $('#contact_phone').attr('href', $('#contact_phone').attr('href').replace(/^tel/, 'callto')); // use Skype for desktop
+                        }
+
                         /* Scroll animation for menu links */
                         $('#menu .section_link').click( function(event) {
                             event.preventDefault();
@@ -645,9 +650,9 @@
 
                 <div id="attributes" class="fg_lgrey">
                     <ul>
-                        <li><a href="http://zhihaojia.com">zhihaojia.com</a></li>
-                        <li>(226) 808-9105</li>
-                        <li><a href="mailto:contact@zhihaojia.com">contact@zhihaojia.com</a></li>
+                        <li><a id="contact_website" href="http://zhihaojia.com">zhihaojia.com</a></li>
+                        <li><a id="contact_phone" href="tel:226-808-9105">(226) 808-9105</a></li>
+                        <li><a id="contact_email" href="mailto:contact@zhihaojia.com">contact@zhihaojia.com</a></li>
                     </ul>
                 </div>
 
@@ -688,8 +693,8 @@
                             <li>Eclipse</li>
                             <li>Git</li>
                             <li>Mercurial</li>
-                            <li>SVN (Subversion)</li>
-                            <li>VSS (Visual SourceSafe)</li>
+                            <li>SVN</li>
+                            <li>VSS</li>
                             <li>GIMP</li>
                         </ul>
                     </section>
