@@ -244,21 +244,15 @@
       }
 
       .box li,
-      .bi_box li,
-      .tri_box li,
       .details li {
         margin: 1px 0;
         line-height: 1.2em;
       }
       .box li:before,
-      .bi_box li:before,
-      .tri_box li:before,
       .details li:before {
         content: "» "; /* "» " = \00BB \0020 ; "■ " = \25a0 \0020 */
       }
-      .box .details,
-      .bi_box .details,
-      .tri_box .details {
+      .box .details {
         width: 100%;
         padding: 16px 36px;
 
@@ -277,25 +271,28 @@
         box-shadow:         1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
       }
 
-      .bi_box,
-      .tri_box {
+      .box.one {
+        margin: 24px 0;
+      }
+      .box.two,
+      .box.three {
         display: inline-block;
         margin-left: 20px;
         vertical-align: top;
 
         overflow: hidden;
       }
-      .bi_box:first-child,
-      .tri_box:first-child {
+      .box.two:first-child,
+      .box.three:first-child {
         margin-left: 0;
       }
-      .bi_box .label,
-      .tri_box .label {
+      .box.two .label,
+      .box.three .label {
         margin-bottom: 12px;
         text-align: center;
       }
-      .bi_box .details,
-      .tri_box .details {
+      .box.two .details,
+      .box.three .details {
         height: 100%;
         height: -ms-calc(     100% - 38px);
         height: -moz-calc(    100% - 38px);
@@ -303,9 +300,6 @@
         height: -o-calc(      100% - 38px);
       }
 
-      .box {
-        margin: 24px 0;
-      }
       .box header {
         margin: 8px 0;
       }
@@ -321,12 +315,12 @@
         margin-top: 4px;
       }
 
-      .bi_box {
+      .box.two {
         height: 14em;
         width: 486px;
       }
 
-      .tri_box {
+      .box.three {
         height: 16em;
         width: 316px;
       }
@@ -472,23 +466,21 @@
           display: none !important;
         }
 
-        .box .details,
-        .bi_box .details,
-        .tri_box .details {
+        .box .details {
           padding: 0 !important;
         }
-        .bi_box .label,
-        .tri_box .label {
+        .box.two .label,
+        .box.three .label {
           margin-bottom: 6px !important;
           text-align: left !important;
         }
         .box {
           margin: 18px 0 !important;
         }
-        .bi_box {
+        .box.two {
           height: 12em !important;
         }
-        .tri_box {
+        .box.three {
           height: 13em !important;
         }
 
@@ -674,7 +666,7 @@
         <h2>Skills</h2>
 
         <div class="nowrap">
-          <section id="languages" class="tri_box">
+          <section id="languages" class="box three">
             <h4 class="fg_grey label">Languages</h4>
             <ul class="details fg_llgrey bg_grey">
               <li>HTML5</li>
@@ -689,7 +681,7 @@
             </ul>
           </section>
 
-          <section id="tools" class="tri_box">
+          <section id="tools" class="box three">
             <h4 class="fg_grey label">Tools</h4>
             <ul class="details fg_llgrey bg_grey">
               <li>Vim</li>
@@ -703,7 +695,7 @@
             </ul>
           </section>
 
-          <section id="technologies" class="tri_box">
+          <section id="technologies" class="box three">
             <h4 class="fg_grey label">Technologies</h4>
             <ul class="details fg_llgrey bg_grey">
               <li>Bash</li>
@@ -728,7 +720,7 @@
       <section id="experience" class="section">
         <h2>Experience</h2>
         
-        <article class="box">
+        <article class="box one">
           <header>
             <h4 class="position">Web Developer</h4>
             <h5 class="location fg_lgrey">(SkyWave Mobile Communications Inc)</h5>
@@ -742,7 +734,7 @@
           </ul>
         </article>
 
-        <article class="box">
+        <article class="box one">
           <header>
             <h4 class="position">Software Developer</h4>
             <h5 class="location fg_lgrey">(SkyWave Mobile Communications Inc)</h5>
@@ -756,7 +748,7 @@
           </ul>
         </article>
 
-        <article class="box">
+        <article class="box one">
           <header>
             <h4 class="position">Technical Analayst</h4>
             <h5 class="location fg_lgrey">(IBM Canada Ltd)</h5>
@@ -770,7 +762,7 @@
           </ul>
         </article>
 
-        <article class="box">
+        <article class="box one">
           <header>
             <h4 class="position">Software Quality Assurance Specialist</h4>
             <h5 class="location fg_lgrey">(Ramsoft Inc)</h5>
@@ -792,7 +784,7 @@
       <section id="projects" class="section">
         <h2>Projects</h2>
 
-        <article class="box">
+        <article class="box one">
           <header>
             <h4 class="position"><a href="https://github.com/zhihaojia/colorhack">ColorHack</a></h4>
             <h5 class="location fg_lgrey">(JavaScript)</h5>
@@ -811,7 +803,7 @@
           </ul>
         </article>
 
-        <article class="box">
+        <article class="box one">
           <header>
             <h4 class="position">SimpleCanvas</h4>
             <h5 class="location fg_lgrey">(HTML5 + JavaScript)</h5>
@@ -839,7 +831,7 @@
       <section id="education" class="section">
         <h2>Education</h2>
 
-        <article class="box">
+        <article class="box one">
           <header>
             <h4 class="position">Candidate for Bachelor of Computer Science - Honours Bioinformatics Option</h4>
             <h5 class="location fg_lgrey">(University of Waterloo)</h5>
@@ -876,7 +868,7 @@
       <section id="distinctions" class="section">
         <h2>Distinctions</h2>
 
-        <article class="box">
+        <article class="box one">
           <header>
             <h4 class="position">President's Scholarship of Distinction</h4>
             <h5 class="location fg_lgrey">(University of Waterloo)</h5>
@@ -887,7 +879,7 @@
           </ul>
         </article>
 
-        <article class="box">
+        <article class="box one">
           <header>
             <h4 class="position">Honours Over 90% Silver Medal</h4>
             <h5 class="location fg_lgrey">(Merivale High School)</h5>
@@ -898,7 +890,7 @@
           </ul>
         </article>
 
-        <article class="box">
+        <article class="box one">
           <header>
             <h4 class="position">Gifted Student Designation</h4>
             <h5 class="location fg_lgrey">(Ottawa-Carleton District School Board)</h5>
@@ -919,7 +911,7 @@
         <h2>Interests</h2>
 
         <div class="nowrap">
-          <section id="activities" class="bi_box">
+          <section id="activities" class="box two">
             <h4 class="fg_grey label">Activities</h4>
             <ul class="details fg_llgrey bg_grey">
               <li>Graphic design</li>
@@ -932,7 +924,7 @@
             </ul>
           </section>
 
-          <section id="following" class="bi_box">
+          <section id="following" class="box two">
             <h4 class="fg_grey label">Following</h4>
             <ul class="details fg_llgrey bg_grey">
               <li>Hacker News</li>
