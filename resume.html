@@ -246,12 +246,16 @@
 
       .box li,
       .details li {
-        margin: 1px 0;
+        margin: 2px 0 2px 16px;
         line-height: 1.2em;
+        position: relative;
       }
       .box li:before,
       .details li:before {
         content: "» "; /* "» " = \00BB \0020 ; "■ " = \25a0 \0020 */
+        position: absolute;
+        top: -2px;
+        left: -16px;
       }
       .box .details {
         width: 100%;
