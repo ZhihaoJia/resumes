@@ -146,7 +146,7 @@
       .nowrap {
         white-space: nowrap;
       }
-      .remove {
+      .hidden {
         display: none;
       }
 
@@ -163,7 +163,8 @@
         text-shadow: -1px -1px rgb(0, 0, 0);
       }
       #menu:hover {
-        opacity: 1; /* Chrome seems to lower the font weight if opacity <1 - fix by setting opacity to 0.99 and increasing weight */
+        /* Chrome seems to lower the font weight if opacity <1 - fix by setting opacity to 0.99 and increasing weight */
+        opacity: 1;
       }
       #menu a:hover {
         color: rgb(230, 230, 230);
@@ -225,21 +226,21 @@
         height: 2px;
 
         background: rgb(100, 100, 100);
-        background: -ms-linear-gradient(left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
-        background: -moz-linear-gradient(left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
+        background: -ms-linear-gradient(    left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
+        background: -moz-linear-gradient(   left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
         background: -webkit-linear-gradient(left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
-        background: -o-linear-gradient(left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
-        background: linear-gradient(left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
+        background: -o-linear-gradient(     left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
+        background: linear-gradient(        left, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 40%, rgba(100, 100, 100, 1) 60%, rgba(100, 100, 100, 0) 100%);
       }
       .divider .shadow {
         height: 1px;
 
         background: rgb(255, 255, 255);
-        background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
-        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+        background: -ms-linear-gradient(    left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+        background: -moz-linear-gradient(   left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
         background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
-        background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
-        background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+        background: -o-linear-gradient(     left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(        left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
       }
 
       .box li,
@@ -263,17 +264,17 @@
 
         text-shadow: -1px -1px rgb(0, 0, 0);
 
-        -ms-box-sizing: border-box;
-        -moz-box-sizing: border-box;
+        -ms-box-sizing:     border-box;
+        -moz-box-sizing:    border-box;
         -webkit-box-sizing: border-box;
-        -o-box-sizing: border-box;
-        box-sizing: border-box;
+        -o-box-sizing:      border-box;
+        box-sizing:         border-box;
 
-        -ms-box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
-        -moz-box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
+        -ms-box-shadow:     1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
+        -moz-box-shadow:    1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
         -webkit-box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
-        -o-box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
-        box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
+        -o-box-shadow:      1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
+        box-shadow:         1px 2px 4px 0 rgba(0, 0, 0, 0.4) inset;
       }
 
       .bi_box,
@@ -296,10 +297,10 @@
       .bi_box .details,
       .tri_box .details {
         height: 100%;
-        height: -ms-calc(100% - 38px);
-        height: -moz-calc(100% - 38px);
-        height: -webkit-calc(100% - 38px);
-        height: -o-calc(100% - 38px);
+        height: -ms-calc(     100% - 38px);
+        height: -moz-calc(    100% - 38px);
+        height: -webkit-calc( 100% - 38px);
+        height: -o-calc(      100% - 38px);
       }
 
       .box {
@@ -340,17 +341,17 @@
         font-size: 0.8em;
         white-space: nowrap;
 
-        -ms-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        -o-border-radius: 4px;
-        border-radius: 4px;
+        -ms-border-radius:      4px;
+        -moz-border-radius:     4px;
+        -webkit-border-radius:  4px;
+        -o-border-radius:       4px;
+        border-radius:          4px;
 
-        -ms-box-shadow: 1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
-        -moz-box-shadow: 1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
+        -ms-box-shadow:     1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
+        -moz-box-shadow:    1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
         -webkit-box-shadow: 1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
-        -o-box-shadow: 1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
-        box-shadow: 1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
+        -o-box-shadow:      1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
+        box-shadow:         1px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
       }
 
       /* ABOUT */
@@ -422,17 +423,17 @@
           background: white !important;
           text-shadow: none !important;
 
-          -ms-border-radius: 0 !important;
-          -moz-border-radius: 0 !important;
-          -webkit-border-radius: 0 !important;
-          -o-border-radius: 0 !important;
-          border-radius: 0 !important;
+          -ms-border-radius:      0 !important;
+          -moz-border-radius:     0 !important;
+          -webkit-border-radius:  0 !important;
+          -o-border-radius:       0 !important;
+          border-radius:          0 !important;
 
-          -ms-box-shadow: none !important;
-          -moz-box-shadow: none !important;
+          -ms-box-shadow:     none !important;
+          -moz-box-shadow:    none !important;
           -webkit-box-shadow: none !important;
-          -o-box-shadow: none !important;
-          box-shadow: none !important;
+          -o-box-shadow:      none !important;
+          box-shadow:         none !important;
         }
         h1 {
           font-size: 88px !important;
@@ -655,7 +656,7 @@
           <ul>
             <li><a id="contact_website" href="http://zhihaojia.com">zhihaojia.com</a></li>
             <li><a id="contact_phone" href="tel:226-808-9105">(226) 808-9105</a></li>
-            <li><script type="text/javascript">var user = 'contact'; var domain = 'zhihaojia'; var tld = 'com'; document.write('<a id="contact_email" hr' + 'ef="m' + 'ailt' + 'o:' + user + '@' + domain + '.' + tld + '">');</script>&#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;<span class="remove">REMOVE</span>&#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;<script type="text/javascript">document.write('</a>');</script></li>
+            <li><script type="text/javascript">var user = 'contact'; var domain = 'zhihaojia'; var tld = 'com'; document.write('<a id="contact_email" hr' + 'ef="m' + 'ailt' + 'o:' + user + '@' + domain + '.' + tld + '">');</script>&#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;<span class="hidden">HIDDEN</span>&#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;<script type="text/javascript">document.write('</a>');</script></li>
           </ul>
         </div>
 
