@@ -73,10 +73,10 @@
     <!-- Styling -->
     <style type="text/css">
       /* GLOBAL */
-      strong {
+      strong, .bold {
         font-weight: bold;
       }
-      em {
+      em, .italic {
         font-style: italic;
       }
       body {
@@ -156,6 +156,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        min-width: 1000px;
         z-index: 10;
         white-space: nowrap;
 
@@ -648,6 +649,7 @@
           <ul>
             <li><a id="contact_website" href="http://zhihaojia.com">zhihaojia.com</a></li>
             <li><a id="contact_phone" href="tel:519-498-3128">(519) 498-3128</a></li>
+            <!-- Hide email from web crawlers using JS, alternating character-encoding, and extraneous markup. Lack of spam emails indicates it is working. -->
             <li><script type="text/javascript">var user = 'contact'; var domain = 'zhihaojia'; var tld = 'com'; document.write('<a id="contact_email" hr' + 'ef="m' + 'ailt' + 'o:' + user + '@' + domain + '.' + tld + '">');</script>&#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;<span class="hidden">HIDDEN</span>&#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;<script type="text/javascript">document.write('</a>');</script></li>
           </ul>
         </div>
