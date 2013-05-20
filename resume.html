@@ -293,7 +293,7 @@
       }
       .box.two .label,
       .box.three .label {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         text-align: center;
       }
       .box.two .details,
@@ -308,20 +308,19 @@
       .box header {
         margin: 8px 0;
       }
-      .box header .position,
-      .box header .location {
+      .box header .primary,
+      .box header .tertiary {
         display: inline-block;
       }
-      .box header .location {
+      .box header .tertiary {
         margin-left: 12px;
       }
-      .box header .time {
+      .box header .secondary {
         float: right;
         margin-top: 4px;
       }
 
       .box.two {
-        height: 14em;
         width: 486px;
       }
 
@@ -390,20 +389,26 @@
       }
 
       /* SKILLS */
+      #skills .box.one header {
+        text-align: center;
+      }
+      #skills .box.two {
+        height: 15em;
+      }
 
 
       /* EXPERIENCE */
 
 
       /* EDUCATION */
-      #education .box header .position {
+      #education .box header .primary {
         display: block;
       }
-      #education .box header .location {
+      #education .box header .tertiary {
         display: inline-block;
         margin-left: 0;
       }
-      #education .box header .time {
+      #education .box header .secondary {
         margin-top: 2px;
       }
 
@@ -413,6 +418,9 @@
       /* INTERESTS */
       #interests > div {
         margin-bottom: 16px;
+      }
+      #interests .box.two {
+        height: 14em;
       }
 
 
@@ -618,13 +626,13 @@
       #about #attributes {
         margin-left:    0;
       }
-      .box header .location {
+      .box header .tertiary {
         margin-left:    0;
       }
-      .box header .time {
+      .box header .secondary {
         float:        none;
       }
-      #education .box header .time {
+      #education .box header .secondary {
         float:        none;
         margin-top:     0;
       }
@@ -671,24 +679,26 @@
       <section id="skills" class="section">
         <h2>Skills</h2>
 
-        <div class="nowrap">
-          <section id="languages" class="box three">
-            <h4 class="fg_grey label">Languages</h4>
-            <ul class="details fg_llgrey bg_grey">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript (jQuery)</li>
-              <li>C++</li>
-              <li>C# (.NET)</li>
-              <li>Visual Basic (ASP.NET)</li>
-              <li>Scheme</li>
-              <li>SQL</li>
-              <li>XML</li>
-            </ul>
-          </section>
+        <section id="languages" class="box one">
+          <header>
+            <h4 class="primary">Languages</h4>
+          </header>
+          <ul class="details fg_llgrey bg_grey">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (jQuery)</li>
+            <li>C++</li>
+            <li>C# (.NET)</li>
+            <li>Visual Basic (ASP.NET)</li>
+            <li>Scheme</li>
+            <li>SQL</li>
+            <li>XML</li>
+          </ul>
+        </section>
 
-          <section id="tools" class="box three">
-            <h4 class="fg_grey label">Tools</h4>
+        <div class="nowrap">
+          <section id="tools" class="box two">
+            <h4 class="label">Tools</h4>
             <ul class="details fg_llgrey bg_grey">
               <li>Vim</li>
               <li>Visual Studio</li>
@@ -701,8 +711,8 @@
             </ul>
           </section>
 
-          <section id="technologies" class="box three">
-            <h4 class="fg_grey label">Technologies</h4>
+          <section id="technologies" class="box two">
+            <h4 class="label">Technologies</h4>
             <ul class="details fg_llgrey bg_grey">
               <li>Bash</li>
               <li>AJAX</li>
@@ -728,9 +738,9 @@
         
         <article class="box one">
           <header>
-            <h4 class="position">Web Developer</h4>
-            <h5 class="location fg_lgrey">(SkyWave Mobile Communications Inc)</h5>
-            <h5 class="time fg_grey">Apr 2012 - Aug 2012</h5>
+            <h4 class="primary">Web Developer</h4>
+            <h5 class="tertiary fg_lgrey">(SkyWave Mobile Communications Inc)</h5>
+            <h5 class="secondary fg_grey">Apr 2012 - Aug 2012</h5>
           </header>
           <ul class="details fg_llgrey bg_grey">
             <li>Made major enhancements to the internal issue-management website, such as adding user administration functionality and complex search querying and management capabilities.</li>
@@ -742,9 +752,9 @@
 
         <article class="box one">
           <header>
-            <h4 class="position">Software Developer</h4>
-            <h5 class="location fg_lgrey">(SkyWave Mobile Communications Inc)</h5>
-            <h5 class="time fg_grey">Aug 2011 - Dec 2011</h5>
+            <h4 class="primary">Software Developer</h4>
+            <h5 class="tertiary fg_lgrey">(SkyWave Mobile Communications Inc)</h5>
+            <h5 class="secondary fg_grey">Aug 2011 - Dec 2011</h5>
           </header>
           <ul class="details fg_llgrey bg_grey">
             <li>Involved in the redesign of the internal issue-management and tracking system.</li>
@@ -756,9 +766,9 @@
 
         <article class="box one">
           <header>
-            <h4 class="position">Technical Analayst</h4>
-            <h5 class="location fg_lgrey">(IBM Canada Ltd)</h5>
-            <h5 class="time fg_grey">Jan 2011 - Apr 2011</h5>
+            <h4 class="primary">Technical Analayst</h4>
+            <h5 class="tertiary fg_lgrey">(IBM Canada Ltd)</h5>
+            <h5 class="secondary fg_grey">Jan 2011 - Apr 2011</h5>
           </header>
           <ul class="details fg_llgrey bg_grey">
             <li>Conducted black box testing and ran simulations for the Cognos 8 BI product in the identification of software defects and enhancement specifications.</li>
@@ -770,9 +780,9 @@
 
         <article class="box one">
           <header>
-            <h4 class="position">Software Quality Assurance Specialist</h4>
-            <h5 class="location fg_lgrey">(Ramsoft Inc)</h5>
-            <h5 class="time fg_grey">May 2010 - Aug 2010</h5>
+            <h4 class="primary">Software Quality Assurance Specialist</h4>
+            <h5 class="tertiary fg_lgrey">(Ramsoft Inc)</h5>
+            <h5 class="secondary fg_grey">May 2010 - Aug 2010</h5>
           </header>
           <ul class="details fg_llgrey bg_grey">
             <li>Developed and conducted multiple levels of testing for software tools, interfaces, and integrated third-party software within the field of radiology and other medical imaging practices.</li>
@@ -792,9 +802,9 @@
 
         <article class="box one">
           <header>
-            <h4 class="position"><a href="https://github.com/zhihaojia/colorhack">ColorHack</a></h4>
-            <h5 class="location fg_lgrey">(JavaScript)</h5>
-            <h5 class="time fg_grey">In Development</h5>
+            <h4 class="primary"><a href="https://github.com/zhihaojia/colorhack">ColorHack</a></h4>
+            <h5 class="tertiary fg_lgrey">(JavaScript)</h5>
+            <h5 class="secondary fg_grey">In Development</h5>
           </header>
           <ul class="details fg_llgrey bg_grey">
             <li>
@@ -811,9 +821,9 @@
 
         <article class="box one">
           <header>
-            <h4 class="position">SimpleCanvas</h4>
-            <h5 class="location fg_lgrey">(HTML5 + JavaScript)</h5>
-            <h5 class="time fg_grey">Unfinished & Paused</h5>
+            <h4 class="primary">SimpleCanvas</h4>
+            <h5 class="tertiary fg_lgrey">(HTML5 + JavaScript)</h5>
+            <h5 class="secondary fg_grey">Unfinished & Paused</h5>
           </header>
           <ul class="details fg_llgrey bg_grey">
             <li>
@@ -839,9 +849,9 @@
 
         <article class="box one">
           <header>
-            <h4 class="position">Candidate for Bachelor of Computer Science - Honours Bioinformatics Option</h4>
-            <h5 class="location fg_lgrey">(University of Waterloo)</h5>
-            <h5 class="time fg_grey">In Progress</h5>
+            <h4 class="primary">Candidate for Bachelor of Computer Science - Honours Bioinformatics Option</h4>
+            <h5 class="tertiary fg_lgrey">(University of Waterloo)</h5>
+            <h5 class="secondary fg_grey">In Progress</h5>
           </header>
           <ul class="details fg_llgrey bg_grey">
             <li>
@@ -855,12 +865,16 @@
               <span class="item">Data Structures and Data Management</span>,
               <span class="item">Computer Organization and Design</span>,
               <span class="item">Resources in Bioinformatics</span>.
-            </li>
-            <li>
-              Enrolled in:
               <span class="item">Algorithms</span>,
               <span class="item">Numerical Computation</span>,
               <span class="item">Operating Systems</span>.
+            </li>
+            <li>
+              Enrolled in:
+              <span class="item">Introduction to Database Management</span>,
+              <span class="item">User Interfaces</span>,
+              <span class="item">Computer Networks</span>,
+              <span class="item">Computational Techniques in Biological Sequence Analysis</span>.
             </li>
           </ul>
         </article>
@@ -876,9 +890,9 @@
 
         <article class="box one">
           <header>
-            <h4 class="position">President's Scholarship of Distinction</h4>
-            <h5 class="location fg_lgrey">(University of Waterloo)</h5>
-            <h5 class="time fg_grey">Sep 2009</h5>
+            <h4 class="primary">President's Scholarship of Distinction</h4>
+            <h5 class="tertiary fg_lgrey">(University of Waterloo)</h5>
+            <h5 class="secondary fg_grey">Sep 2009</h5>
           </header>
           <ul class="details fg_llgrey bg_grey">
             <li>Early May admission average of 95%+ for students admitted to full-time, first-year degree studies at the University of Waterloo who are beginning post-secondary studies for the first time in fall 2009.</li>
@@ -887,9 +901,9 @@
 
         <article class="box one">
           <header>
-            <h4 class="position">Honours Over 90% Silver Medal</h4>
-            <h5 class="location fg_lgrey">(Merivale High School)</h5>
-            <h5 class="time fg_grey">Sep 2005 - Jun 2009</h5>
+            <h4 class="primary">Honours Over 90% Silver Medal</h4>
+            <h5 class="tertiary fg_lgrey">(Merivale High School)</h5>
+            <h5 class="secondary fg_grey">Sep 2005 - Jun 2009</h5>
           </header>
           <ul class="details fg_llgrey bg_grey">
             <li>Academic excellence with an average of over 90% in all four years of high school.</li>
@@ -898,9 +912,9 @@
 
         <article class="box one">
           <header>
-            <h4 class="position">Gifted Student Designation</h4>
-            <h5 class="location fg_lgrey">(Ottawa-Carleton District School Board)</h5>
-            <h5 class="time fg_grey">2000 - Present</h5>
+            <h4 class="primary">Gifted Student Designation</h4>
+            <h5 class="tertiary fg_lgrey">(Ottawa-Carleton District School Board)</h5>
+            <h5 class="secondary fg_grey">2000 - Present</h5>
           </header>
           <ul class="details fg_llgrey bg_grey">
             <li>Scored in the top 1% on the Canada-wide CCAT (Canadian Cognitive Abilities Test).</li>
@@ -918,7 +932,7 @@
 
         <div class="nowrap">
           <section id="activities" class="box two">
-            <h4 class="fg_grey label">Activities</h4>
+            <h4 class="label">Activities</h4>
             <ul class="details fg_llgrey bg_grey">
               <li>Graphic design</li>
               <li>Music</li>
@@ -931,7 +945,7 @@
           </section>
 
           <section id="following" class="box two">
-            <h4 class="fg_grey label">Following</h4>
+            <h4 class="label">Following</h4>
             <ul class="details fg_llgrey bg_grey">
               <li>Hacker News</li>
               <li>TechCrunch</li>
