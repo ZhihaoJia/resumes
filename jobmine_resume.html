@@ -505,15 +505,23 @@
 
     <!-- For Jobmine application package -->
     <style type="text/css">
+      body {
+        margin-top: 48px;
+      }
+      table {
+        margin: 0 auto;
+      }
+      td {
+        padding: 4px 2px;
+      }
+      #resume_link {
+        margin-top: 8px;
+      }
+      @media print {
         body {
-            margin-top: 48px;
+          margin-top: 0px;
         }
-        table {
-            margin: 0 auto;
-        }
-        td {
-            padding: 4px 2px;
-        }
+      }
     </style>
   </head>
 
@@ -550,14 +558,16 @@
           <ul>
             <li><a id="github_link" target="_blank" href="https://github.com/zhihaojia">github.com/zhihaojia</a></li>
             <li><a id="contact_website" target="_blank" href="http://zhihaojia.com">zhihaojia.com</a></li>
-            <li><a id="contact_phone" target="_blank" href="tel:519-498-3128">(519) 498-3128</a></li>
-            <!-- Hide email from web crawlers using JS, alternating character-encoding, and extraneous markup. Lack of spam emails indicates it is working. -->
-            <li><script type="text/javascript">var user = 'contact'; var domain = 'zhihaojia'; var tld = 'com'; document.write('<a id="contact_email" hr' + 'ef="m' + 'ailt' + 'o:' + user + '@' + domain + '.' + tld + '">');</script>&#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;<span class="hidden">HIDDEN</span>&#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;<script type="text/javascript">document.write('</a>');</script></li>
+            <li><a id="contact_phone" href="tel:519-498-3128">(519) 498-3128</a></li>
+            <li><a id="contact_email" href="mailto:contact@zhihaojia.com">zhihao.jia@live.com</a></li>
           </ul>
         </div>
 
         <div id="occupation" class="fg_grey">
           4A <a target="_blank" href="http://www.cs.uwaterloo.ca">Computer Science</a>, <a target="_blank" href="http://uwaterloo.ca">University of Waterloo</a>
+        </div>
+        <div id="resume_link" class="fg_grey">
+          <strong><a target="_blank" href="http://zhihaojia.com/resume">zhihaojia.com/resume</a></strong>
         </div>
       </section>
 
