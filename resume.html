@@ -210,7 +210,9 @@
         position: absolute;
         top: 0;
         left: -16px;
-        font-size: 1.5em;
+        /* Firefox and Chrome/Opera seem to calculate the font size differently here.
+           Not sure why or how to fix. For now the bullets will be smaller on FF. */
+        font-size: 1em;
       }
       .box .details {
         width: 100%;
