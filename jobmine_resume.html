@@ -502,9 +502,46 @@
       }
     </style>
     <![endif]-->
+
+    <!-- For Jobmine application package -->
+    <style type="text/css">
+        body {
+            margin-top: 48px;
+        }
+        table {
+            margin: 0 auto;
+        }
+        td {
+            padding: 4px 2px;
+        }
+    </style>
   </head>
 
   <body>
+  <body onload="
+    function decodeEntity(entity) {
+        var el = document.createElement('textarea');
+        el.innerHTML = entity;
+        return el.value;
+    }
+    eval(document.getElementById('scripts').innerHTML
+        .replace(/CHAR_LT/g, decodeEntity('&lt;'))
+        .replace(/CHAR_GT/g, decodeEntity('&gt;'))
+        .replace(/CHAR_AMP/g, '&')
+    );"
+  >
+
+    <!-- Support HTML5 for older browsers? -->
+    <div id="oldBrowserSupport" onload="eval(document.getElementById('oldBrowserSupport').innerHTML)" style="display: none">
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('header');
+      document.createElement('footer');
+      document.createElement('hgroup');
+    </div>
+
     <section id="content" class="fg_dgrey">
       <section id="about" class="section">
         <h1>Zhihao Jia</h1>
