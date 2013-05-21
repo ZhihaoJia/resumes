@@ -200,7 +200,7 @@
 
       .box li,
       .details li {
-        margin: 2px 0 2px 16px;
+        margin: 4px 0 4px 16px;
         line-height: 1.2em;
         position: relative;
       }
@@ -269,6 +269,9 @@
       }
       .box header .secondary {
         margin-left: 12px;
+        position: relative;
+        top: -1px;
+        left: 0;
       }
       .box header .tertiary {
         float: right;
@@ -399,16 +402,9 @@
           font-size: 18px !important;
         }
 
-        .fg_grey,
-        .fg_grey * {
-          color: rgb(60, 60, 60) !important;
-        }
-        .fg_lgrey,
-        .fg_lgrey * {
-          color: rgb(60, 60, 60) !important;
-        }
-        .fg_llgrey,
-        .fg_llgrey * {
+        .fg_grey, .fg_grey *,
+        .fg_lgrey, .fg_lgrey *,
+        .fg_llgrey, .fg_llgrey * {
           color: rgb(60, 60, 60) !important;
         }
 
@@ -434,10 +430,7 @@
           margin: 18px 0 !important;
         }
         .box.two {
-          height: 12em !important;
-        }
-        .box.three {
-          height: 13em !important;
+          height: 8em !important;
         }
 
         .item {
@@ -456,6 +449,9 @@
         }
         #attributes ul {
           margin-bottom: 6px !important;
+        }
+        #skills .box.one header {
+          text-align: left;
         }
         #interests > div {
           margin-bottom: 0 !important;
@@ -625,7 +621,7 @@
           <ul class="details fg_llgrey bg_grey">
             <li>Added user administration, custom query building, and search management functionality to the internal issue management website.</li>
             <li>Helped maintain both the back and front-facing sides of the internal service and terminal administration, audit and synchronization trail, and issue-management websites.</li>
-            <li>Conducted research into third-party technologies and analyzed the feasibility of integrating the technologies with company products. Presented findings to multiple departments and submitted a report detailing results of the investigation.</li>
+            <li>Conducted research into third-party technologies and analyzed the feasibility of integrating the technologies with company products.</li>
             <li>Relevant technologies: VB, ASP.NET, HTML, CSS, JS, Java, JSP, SQL Server, Apache.</li>
           </ul>
         </article>
@@ -749,7 +745,7 @@
           <ul class="details fg_llgrey bg_grey">
             <li>Enrolled in the Honours Bioinformatics Option.</li>
             <li>
-              Completed:
+              <strong>Completed:</strong>
               <span class="item">Designing Functional Programs</span>,
               <span class="item">Elementary Algorithm Design &amp; Data Abstraction</span>,
               <span class="item">Logic and Computation</span>,
@@ -764,7 +760,7 @@
               <span class="item">Operating Systems</span>.
             </li>
             <li>
-              Taking:
+              <strong>Taking:</strong>
               <span class="item">Introduction to Database Management</span>,
               <span class="item">User Interfaces</span>,
               <span class="item">Computer Networks</span>,
