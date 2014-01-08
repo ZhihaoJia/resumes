@@ -71,17 +71,79 @@
     <!-- Styling -->
     <style type="text/css">
       /* GLOBAL */
+      body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+        color: rgb(68, 68, 68);
+        letter-spacing: 0.2px;
+      }
+
+      h1, h2, h3, h4, h5 {
+        font-weight: bold;
+        line-height: 1.2em;
+        color: rgb(34, 34, 34);
+      }
+      h1 {
+        font-size: 81px;
+      }
+      h2 {
+        font-size: 54px;
+      }
+      h3 {
+        font-size: 36px;
+      }
+      h4 {
+        font-size: 24px;
+      }
+      h5 {
+        font-size: 16px;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+      em {
+        font-style: italic;
+      }
+
+      p, li {
+        line-height: 1.5em;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
       .hidden {
         display: none;
       }
 
       /* GENERAL */
+      .section {
+        margin: 2em 0;
+      }
+
+      .experience,
+      .project,
+      .education {
+        margin-top: 1em;
+      }
+
+      .experience li,
+      .project li,
+      .education li {
+        list-style-type: disc;
+        margin-left: 2em;
+      }
 
 
       /* CONTENT */
+      #content {
+        margin: 0 auto;
+        width: 800px;
+        font-size: 16px;
+      }
 
-
-      /* CONTACT */
+      /* ME */
 
 
       /* SKILLS */
@@ -149,7 +211,7 @@
 
   <body>
     <section id="content">
-      <header>
+      <header id="me" class="section">
         <h1 id="name">Zhihao Jia</h1>
 
         <section id="contact">
@@ -181,7 +243,7 @@
         </section>
       </header>
 
-      <section id="skills">
+      <section id="skills" class="section">
         <header>
           <h2>Skills</h2>
         </header>
@@ -219,7 +281,6 @@
           <ul class="skill-details">
             <li>HTML5</li>
             <li>CSS3</li>
-            <li>GIMP</li>
           </ul>
         </section>
 
@@ -235,7 +296,7 @@
         </section>
       </section>
 
-      <section id="experience">
+      <section id="experience" class="section">
         <header>
             <h2>Experience</h2>
         </header>
@@ -337,7 +398,7 @@
         </section>
       </section>
 
-      <section id="projects">
+      <section id="projects" class="section">
         <header>
           <h2>Projects</h2>
         </header>
@@ -392,7 +453,7 @@
         </section>
       </section>
 
-      <section id="education">
+      <section id="education" class="section">
         <header>
           <h2>Education</h2>
         </header>
@@ -413,7 +474,7 @@
         </section>
       </section>
 
-      <section id="interests">
+      <section id="interests" class="section">
         <header>
           <h2>Interests</h2>
         </header>
