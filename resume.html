@@ -74,7 +74,7 @@
       body {
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
         color: rgb(68, 68, 68);
-        letter-spacing: 0.2px;
+        letter-spacing: 0.5px;
       }
 
       h1, h2, h3, h4, h5 {
@@ -120,11 +120,40 @@
         margin: 0 4px;
       }
 
+      .full-width {
+        width: 100%;
+      }
+      .half-width {
+        width: 50%;
+      }
+      .third-width {
+        width: 33.3%;
+      }
+      .two-third-width {
+        width: 66.6%;
+      }
+      .quarter-width {
+        width: 25%;
+      }
+      .three-quarter-width {
+        width: 75%;
+      }
+
+      .clearfix:before,
+      .clearfix:after {
+        content: " ";
+        display: table;
+      }
+      .clearfix:after {
+        clear: both;
+      }
+
       /* GENERAL */
       .section {
         margin: 2em 0;
       }
 
+      .skill,
       .experience,
       .project,
       .education {
@@ -169,7 +198,21 @@
       }
 
       /* SKILLS */
-
+      .skill,
+      .skill header,
+      .skill .skill-details {
+        float: left;
+        box-sizing: border-box;
+      }
+      .skill header {
+        width: 40%;
+        padding-right: 10px;
+        text-align: right;
+      }
+      .skill .skill-details {
+        width: 60%;
+        padding-left: 10px;
+      }
 
       /* EXPERIENCE */
 
@@ -265,12 +308,23 @@
         </section>
       </header>
 
-      <section id="skills" class="section">
+      <section id="skills" class="section clearfix">
         <header>
           <h2>Skills</h2>
         </header>
 
-        <section id="skills-javascript" class="skill">
+        <section id="skills-design" class="skill quarter-width">
+          <header>
+            <h4>Web Design</h4>
+          </header>
+
+          <ul class="skill-details">
+            <li>HTML5</li>
+            <li>CSS3, Sass</li>
+          </ul>
+        </section>
+
+        <section id="skills-javascript" class="skill three-quarter-width">
           <header>
             <h4>JavaScript</h4>
           </header>
@@ -282,7 +336,7 @@
           </ul>
         </section>
 
-        <section id="skills-ruby" class="skill">
+        <section id="skills-ruby" class="skill quarter-width">
           <header>
             <h4>Ruby</h4>
           </header>
@@ -294,18 +348,7 @@
           </ul>
         </section>
 
-        <section id="skills-design" class="skill">
-          <header>
-            <h4>Web Design</h4>
-          </header>
-
-          <ul class="skill-details">
-            <li>HTML5</li>
-            <li>CSS3, Sass</li>
-          </ul>
-        </section>
-
-        <section id="skills-tools" class="skill">
+        <section id="skills-tools" class="skill three-quarter-width">
           <header>
             <h4>Tools</h4>
           </header>
