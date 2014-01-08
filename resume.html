@@ -78,7 +78,7 @@
       }
 
       h1, h2, h3, h4, h5 {
-        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
         line-height: 1.2em;
         color: rgb(34, 34, 34);
       }
@@ -116,6 +116,9 @@
       .hidden {
         display: none;
       }
+      .text-divider {
+        margin: 0 4px;
+      }
 
       /* GENERAL */
       .section {
@@ -142,9 +145,28 @@
         width: 800px;
         font-size: 16px;
       }
+      #content a {
+        color: rgb(68, 68, 68);
+      }
 
       /* ME */
-
+      .me-primary {
+        display: inline-block;
+      }
+      #contact,
+      #links {
+        font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+        letter-spacing: 1px;
+        font-size: 20px;
+      }
+      #contact {
+        display: inline-block;
+        vertical-align: baseline;
+        margin-left: 1.4em;
+      }
+      #contact li {
+        line-height: 1.6em;
+      }
 
       /* SKILLS */
 
@@ -212,12 +234,20 @@
   <body>
     <section id="content">
       <header id="me" class="section">
-        <h1 id="name">Zhihao Jia</h1>
+        <div class="me-primary">
+          <h1 id="name">Zhihao Jia</h1>
+
+          <section id="links">
+            <a id="link-website" target="_blank" href="http://zhihaojia.com">zhihaojia.com</a>
+            <span class="text-divider">•</span>
+            <a id="link-github" target="_blank" href="https://github.com/zhihaojia">github.com/zhihaojia</a>
+          </section>
+        </div>
 
         <section id="contact">
           <ul>
+            <li><a id="contact-twitter" target="_blank" href="https://twitter.com/ZhihaoJia">@zhihaojia</a></li>
             <li><a id="contact-number" target="_blank" href="tel:519-497-9787">(519) 497-9787</a></li>
-            <li><a id="contact-twitter" target="_blank" href="https://twitter.com/ZhihaoJia">@ZhihaoJia</a></li>
             <li>
               <!-- Hide email from web crawlers using JS, alternating character-encoding, and extraneous markup. -->
               <script type="text/javascript">
@@ -226,19 +256,11 @@
                 var tld = 'com';
                 document.write('<a id="contact-email" hr' + 'ef="m' + 'ailt' + 'o:' + user + '@' + domain + '.' + tld + '">');
               </script>
-              &#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;
-              <span class="hidden">HIDDEN</span>
-              &#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;
+              &#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;<span class="hidden">HIDDEN</span>&#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;
               <script type="text/javascript">
                 document.write('</a>');
               </script>
             </li>
-          </ul>
-        </section>
-        <section id="links">
-          <ul>
-            <li><a id="link-website" target="_blank" href="http://zhihaojia.com">zhihaojia.com</a></li>
-            <li><a id="link-github" target="_blank" href="https://github.com/zhihaojia">github.com/zhihaojia</a></li>
           </ul>
         </section>
       </header>
