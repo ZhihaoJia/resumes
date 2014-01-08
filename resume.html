@@ -71,18 +71,26 @@
     <!-- Styling -->
     <style type="text/css">
       /* GLOBAL */
+      .hidden {
+        display: none;
+      }
+
+      /* GENERAL */
 
 
       /* CONTENT */
 
 
-      /* ABOUT */
+      /* CONTACT */
 
 
       /* SKILLS */
 
 
       /* EXPERIENCE */
+
+
+      /* PROJECTS */
 
 
       /* EDUCATION */
@@ -108,13 +116,13 @@
     </script>
 
     <style type="text/css">
-      header
-      ,nav
-      ,section
-      ,article
-      ,aside
-      ,footer
-      ,hgroup {
+      header,
+      nav,
+      section,
+      article,
+      aside,
+      footer,
+      hgroup {
         display: block;
       }
     </style>
@@ -140,6 +148,340 @@
   </head>
 
   <body>
+    <section id="content">
+      <header>
+        <h1 id="name">Zhihao Jia</h1>
+
+        <section id="contact">
+          <ul>
+            <li><a id="contact-number" target="_blank" href="tel:519-497-9787">(519) 497-9787</a></li>
+            <li><a id="contact-twitter" target="_blank" href="https://twitter.com/ZhihaoJia">@ZhihaoJia</a></li>
+            <li>
+              <!-- Hide email from web crawlers using JS, alternating character-encoding, and extraneous markup. -->
+              <script type="text/javascript">
+                var user = 'contact';
+                var domain = 'zhihaojia';
+                var tld = 'com';
+                document.write('<a id="contact-email" hr' + 'ef="m' + 'ailt' + 'o:' + user + '@' + domain + '.' + tld + '">');
+              </script>
+              &#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;
+              <span class="hidden">HIDDEN</span>
+              &#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;
+              <script type="text/javascript">
+                document.write('</a>');
+              </script>
+            </li>
+          </ul>
+        </section>
+        <section id="links">
+          <ul>
+            <li><a id="link-website" target="_blank" href="http://zhihaojia.com">zhihaojia.com</a></li>
+            <li><a id="link-github" target="_blank" href="https://github.com/zhihaojia">github.com/zhihaojia</a></li>
+          </ul>
+        </section>
+      </header>
+
+      <section id="skills">
+        <header>
+          <h2>Skills</h2>
+        </header>
+
+        <section id="skills-javascript" class="skill">
+          <header>
+            <h4>JavaScript</h4>
+          </header>
+
+          <ul class="skill-details">
+            <li>Web Apps: Backbone.js, Angular.js</li>
+            <li>Utility: jQuery, jQuery UI, Bootstrap, Underscore.js</li>
+            <li>Templating: Angular.js, Mustache</li>
+            <li>Testing: Jasmine, Mocha, Chai, Sinon.js, Konacha</li>
+          </ul>
+        </section>
+
+        <section id="skills-ruby" class="skill">
+          <header>
+            <h4>Ruby</h4>
+          </header>
+
+          <ul class="skill-details">
+            <li>Rails</li>
+            <li>RSpec</li>
+            <li>Konacha</li>
+          </ul>
+        </section>
+
+        <section id="skills-design" class="skill">
+          <header>
+            <h4>Web Design</h4>
+          </header>
+
+          <ul class="skill-details">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>GIMP</li>
+          </ul>
+        </section>
+
+        <section id="skills-tools" class="skill">
+          <header>
+            <h4>Tools</h4>
+          </header>
+
+          <ul class="skill-details">
+            <li>Text editors/IDEs: Vim, Sublime Text, Visual Studio, Eclipse</li>
+            <li>Version control: Git, Mercurial, SVN</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="experience">
+        <header>
+            <h2>Experience</h2>
+        </header>
+
+        <section class="experience">
+          <header>
+            <h4 class="experience-organization">
+              <a href="https://twitter.com/" target="_blank">Twitter</a>
+            </h4>
+            <div>
+              <h5 class="experience-position">Software Engineer Intern</h5>
+              <h5 class="experience-date">Aug 2013 - Dec 2013</h5>
+            </div>
+          </header>
+          <ul class="experience-details">
+            <li>Part of the Ads ROI (Return On Investment) team.</li>
+            <li>Worked on projects to provide more advanced ad analytics, decrease CPI, and increase conversion rates of ads.</li>
+          </ul>
+        </section>
+
+        <section class="experience">
+          <header>
+            <h4 class="experience-organization">
+              <a href="http://copious.com/" target="_blank">Copious</a>
+            </h4>
+            <div>
+              <h5 class="experience-position">Software Engineer Intern</h5>
+              <h5 class="experience-date">Jan 2013 - Apr 2013</h5>
+            </div>
+          </header>
+          <ul class="experience-details">
+            <li>Developed, fixed, and made enhancements to key features and components of online social marketplace, including infinite scrolling, listing modals, custom typeaheads, and browser URL/history management.</li>
+            <li>Implemented a system used to handle social content in comments, such as @mentions and #hashtags.</li>
+          </ul>
+        </section>
+
+        <section class="experience">
+          <header>
+            <h4 class="experience-organization">
+              <a href="http://www.skywave.com/" target="_blank">SkyWave</a>
+            </h4>
+            <div>
+              <h5 class="experience-position">Software Developer</h5>
+              <h5 class="experience-date">Apr 2012 - Aug 2012</h5>
+            </div>
+          </header>
+          <ul class="experience-details">
+            <li>Added major features to the internal issue management website, such user administration, advanced search capabilities, and search management.</li>
+            <li>Enhanced and maintained the internal product admin, data tracking, and issue management websites.</li>
+            <li>Researched third-party technologies for integration with company products.</li>
+          </ul>
+        </section>
+
+        <section class="experience">
+          <header>
+            <h4 class="experience-organization">
+              <a href="http://www.skywave.com/" target="_blank">SkyWave</a>
+            </h4>
+            <div>
+              <h5 class="experience-position">Software Developer</h5>
+              <h5 class="experience-date">Aug 2011 - Dec 2011</h5>
+            </div>
+          </header>
+          <ul class="experience-details">
+            <li>Built a company-wide, internal issue management system from the ground up under minimal supervision.</li>
+            <li>Developed plugins for integrating multiple version control systems with the internal issue management system.</li>
+          </ul>
+        </section>
+
+        <section class="experience">
+          <header>
+            <h4 class="experience-organization">
+              <a href="http://www.skywave.com/" target="_blank">IBM Canada</a>
+            </h4>
+            <div>
+              <h5 class="experience-position">Technical Analyst</h5>
+              <h5 class="experience-date">Jan 2011 - Apr 2011</h5>
+            </div>
+          </header>
+          <ul class="experience-details">
+            <li>Tested, troubleshooted, and wrote publicly-visible documentation for the Cognos 8 BI (Business Intelligence) product.</li>
+            <li>Provided technical support for live production, development, and test systems.</li>
+          </ul>
+        </section>
+
+        <section class="experience">
+          <header>
+            <h4 class="experience-organization">
+              <a href="http://www.ibm.com/ca/" target="_blank">Ramsoft</a>
+            </h4>
+            <div>
+              <h5 class="experience-position">Software Quality Assurance Specialist</h5>
+              <h5 class="experience-date">May 2010 - Aug 2010</h5>
+            </div>
+          </header>
+          <ul class="experience-details">
+            <li>Tested, troubleshooted, and wrote documentation for RIS/PACS software solutions.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="projects">
+        <header>
+          <h2>Projects</h2>
+        </header>
+
+        <section class="project">
+          <header>
+            <h4 class="project-title">
+              <a href="https://github.com/zhihaojia/colorhack" target="_blank">ColorHack</a>
+            </h4>
+            <div>
+              <h5 class="project-type">Javascript</h5>
+              <h5 class="project-date">Sep 2012 - Present</h5>
+            </div>
+          </header>
+          <ul class="project-details">
+            <li>Provides a GUI for dynamically changing element colors and developing color schemes from the browser.</li>
+            <li>Useful for quickly designing and prototyping web pages.</li>
+          </ul>
+        </section>
+
+        <section class="project">
+          <header>
+            <h4 class="project-title">
+              OS/161
+            </h4>
+            <div>
+              <h5 class="project-type">C &amp; Assembly</h5>
+              <h5 class="project-date">Sep 2012 - Dec 2012</h5>
+            </div>
+          </header>
+          <ul class="project-details">
+            <li>Group: Jasper Berrington, Tanpreet Grewal, Zhihao Jia.</li>
+            <li>Simple operating system based on OS/161 from Harvard University.</li>
+            <li>Added functionality include kernel synchronization mechanisms, system calls, exception handling, PID management, virtual and physical memory management (TLB, page loading, page replacement, etc.).</li>
+          </ul>
+        </section>
+
+        <section class="project">
+          <header>
+            <h4 class="project-title">
+              SimpleCanvas
+            </h4>
+            <div>
+              <h5 class="project-type">HTML5 &amp; JavaScript</h5>
+              <h5 class="project-date">Apr 2012 - Aug 2012</h5>
+            </div>
+          </header>
+          <ul class="project-details">
+            <li>Web painting application using the HTML5 canvas element, with limited undo/redo functionality.</li>
+            <li>Challenge: provide functionality similar to common paint apps using only one canvas element.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="education">
+        <header>
+          <h2>Education</h2>
+        </header>
+
+        <section class="education">
+          <header>
+            <h4 class="education-organization">
+              University of Waterloo
+            </h4>
+            <div>
+              <h5 class="education-degree">Candidate for Bachelor of Computer Science</h5>
+              <h5 class="education-time">In Progress</h5>
+            </div>
+          </header>
+          <ul class="education-details">
+            <li>Enrolled in the Honours Bioinformatics Option.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="interests">
+        <header>
+          <h2>Interests</h2>
+        </header>
+
+        <section id="interest-special" class="interest">
+          <header>
+            <h4>Special Interests</h4>
+          </header>
+
+          <ul class="interest-details">
+            <li>UI, UX, front-end web development, pandas</li>
+          </ul>
+        </section>
+
+        <section id="interest-activities" class="interest">
+          <header>
+            <h4>Activities</h4>
+          </header>
+
+          <ul class="interest-details">
+            <li>Music</li>
+            <li>Reading</li>
+            <li>Table tennis</li>
+            <li>Starcraft 2</li>
+            <li>League of Legends</li>
+            <li>Om nom nom</li>
+          </ul>
+        </section>
+
+        <section id="interest-books" class="interest">
+          <header>
+            <h4>Books</h4>
+          </header>
+
+          <ul class="interest-details">
+            <li>The Pragmatic Programmer - Andrew Hunt &amp; David Thomas</li>
+            <li>The Design of Everyday Things - Don Norman</li>
+            <li>Don't Make Me Think - Steve Krug</li>
+          </ul>
+        </section>
+
+        <section id="interest-news" class="interest">
+          <header>
+            <h4>News</h4>
+          </header>
+
+          <ul class="interest-details">
+            <li>Hacker News</li>
+            <li>TechCrunch</li>
+            <li>VentureBeat</li>
+            <li>Mashable!</li>
+            <li>Wired</li>
+            <li>GigaOM</li>
+          </ul>
+        </section>
+
+        <section id="interest-stackoverflow" class="interest">
+          <header>
+            <h4>Stack Overflow</h4>
+          </header>
+
+          <ul class="interest-details">
+            <li><a target="_blank" href="http://stackoverflow.com/users/1405830/">Active user</a></li>
+            <li>HTML, CSS, JavaScript, jQuery, others</li>
+          </ul>
+        </section>
+      </section>
+    </section>
   </body>
 
 </html>
