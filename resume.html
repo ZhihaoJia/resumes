@@ -175,23 +175,21 @@
         box-sizing: border-box;
       }
       .item-grid header {
-        width: 40%;
+        width: 140px;
         padding-right: 10px;
         text-align: right;
       }
       .item-grid .details {
-        width: 60%;
+        width: auto;
         padding-left: 10px;
         border-left: 2px solid;
       }
 
-      .item-grid.two-third-width header,
-      .item-grid.three-quarter-width header {
-        width: 30%
+      .item-grid.third-width .details {
+        max-width: 104px;
       }
-      .item-grid.two-third-width .details,
-      .item-grid.three-quarter-width .details {
-        width: 70%;
+      .item-grid.two-third-width .details {
+        max-width: 370px;
       }
 
       .item-list li {
