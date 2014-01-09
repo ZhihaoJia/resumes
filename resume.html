@@ -10,6 +10,8 @@
     <meta name="keywords" content="zhihao, jia, resume">
     <meta name="viewport" content="width=400, initial-scale=1">
 
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
     <!-- CSS Reset, based off of the Meyer CSS Reset v2.0b1 -->
     <style type="text/css">
       html, body, div, span, applet, object, iframe,
@@ -84,7 +86,8 @@
       }
       /* 2:3 - perfect fifth ratio */
       h1 {
-        font-size: 81px;
+        font-size: 84px; /* 81px */
+        letter-spacing: 8px;
       }
       h2 {
         font-size: 54px;
@@ -115,6 +118,18 @@
       }
       a:hover {
         text-decoration: underline;
+      }
+
+      .fa.fa-lg {
+        width: 30px;
+        text-align: center;
+        margin-right: 6px;
+      }
+      sup .fa.fa-external-link {
+        font-size: 0.5em;
+        position: relative;
+        top: -0.8em;
+        left: 0.3em;
       }
 
       .hidden {
@@ -281,6 +296,11 @@
 
 
       /* INTERESTS */
+      #interest-so-stack {
+        /* This is a hack */
+        position: relative;
+        left: -16px;
+      }
 
 
       /* Print media */
@@ -370,25 +390,28 @@
           <h1 id="name">Zhihao Jia</h1>
 
           <section id="links">
-            <a id="link-website" target="_blank" href="http://zhihaojia.com">zhihaojia.com</a>
+            <i class="fa fa-globe fa-lg"></i><a id="link-website" target="_blank" href="http://zhihaojia.com">zhihaojia.com<sup><i class="fa fa-external-link"></i></sup></a>
             <span class="text-divider">•</span>
-            <a id="link-github" target="_blank" href="https://github.com/zhihaojia">github.com/zhihaojia</a>
+            <i class="fa fa-github fa-lg"></i><a id="link-github" target="_blank" href="https://github.com/zhihaojia">github.com/zhihaojia<sup><i class="fa fa-external-link"></i></sup></a>
           </section>
         </div>
 
         <section id="contact">
           <ul>
-            <li><a id="contact-twitter" target="_blank" href="https://twitter.com/ZhihaoJia">@zhihaojia</a></li>
-            <li><a id="contact-number" target="_blank" href="tel:519-497-9787">(519) 497-9787</a></li>
+            <li>
+              <i class="fa fa-twitter fa-lg"></i><a id="contact-twitter" target="_blank" href="https://twitter.com/ZhihaoJia">@zhihaojia<sup><i class="fa fa-external-link"></i></sup></a>
+            </li>
+            <li>
+              <i class="fa fa-phone fa-lg"></i><a id="contact-number" target="_blank" href="tel:519-497-9787">(519) 497-9787</a>
+            </li>
             <li>
               <!-- Hide email from web crawlers using JS, alternating character-encoding, and extraneous markup. -->
-              <script type="text/javascript">
+              <i class="fa fa-envelope-o fa-lg"></i><script type="text/javascript">
                 var user = 'contact';
                 var domain = 'zhihaojia';
                 var tld = 'com';
                 document.write('<a id="contact-email" hr' + 'ef="m' + 'ailt' + 'o:' + user + '@' + domain + '.' + tld + '">');
-              </script>
-              &#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;<span class="hidden">HIDDEN</span>&#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;
+              </script>&#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;<span class="hidden">HIDDEN</span>&#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;
               <script type="text/javascript">
                 document.write('</a>');
               </script>
@@ -461,7 +484,7 @@
         <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization primary">
-              <a href="https://twitter.com/" target="_blank">Twitter</a>
+              <a href="https://twitter.com/" target="_blank">Twitter<sup><i class="fa fa-external-link"></i></sup></a>
             </h4>
             <h5 class="experience-position secondary">Software Engineer Intern</h5>
             <h5 class="experience-date tertiary">Aug 2013 - Dec 2013</h5>
@@ -475,7 +498,7 @@
         <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization primary">
-              <a href="http://copious.com/" target="_blank">Copious</a>
+              <a href="http://copious.com/" target="_blank">Copious<sup><i class="fa fa-external-link"></i></sup></a>
             </h4>
             <h5 class="experience-position secondary">Software Engineer Intern</h5>
             <h5 class="experience-date tertiary">Jan 2013 - Apr 2013</h5>
@@ -489,7 +512,7 @@
         <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization primary">
-              <a href="http://www.skywave.com/" target="_blank">SkyWave</a>
+              <a href="http://www.skywave.com/" target="_blank">SkyWave<sup><i class="fa fa-external-link"></i></sup></a>
             </h4>
             <h5 class="experience-position secondary">Software Developer</h5>
             <div class="tertiary">
@@ -507,7 +530,7 @@
         <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization primary">
-              <a href="http://www.skywave.com/" target="_blank">IBM Canada</a>
+              <a href="http://www.skywave.com/" target="_blank">IBM Canada<sup><i class="fa fa-external-link"></i></sup></a>
             </h4>
             <h5 class="experience-position secondary">Technical Analyst</h5>
             <h5 class="experience-date tertiary">Jan 2011 - Apr 2011</h5>
@@ -521,7 +544,7 @@
         <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization primary">
-              <a href="http://www.ibm.com/ca/" target="_blank">Ramsoft</a>
+              <a href="http://www.ibm.com/ca/" target="_blank">Ramsoft<sup><i class="fa fa-external-link"></i></sup></a>
             </h4>
             <h5 class="experience-position secondary">Software Quality Assurance Specialist</h5>
             <h5 class="experience-date tertiary">May 2010 - Aug 2010</h5>
@@ -540,7 +563,7 @@
         <section class="project subsection">
           <header>
             <h4 class="project-title primary">
-              <a href="https://github.com/zhihaojia/colorhack" target="_blank">ColorHack</a>
+              <a href="https://github.com/zhihaojia/colorhack" target="_blank">ColorHack<sup><i class="fa fa-external-link"></i></sup></a>
             </h4>
             <h5 class="project-type secondary">Javascript</h5>
             <h5 class="project-date tertiary">Sep 2012 - Present</h5>
@@ -589,7 +612,7 @@
         <section class="education subsection item-list">
           <header>
             <h4 class="education-organization primary">
-              <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>
+              <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo<sup><i class="fa fa-external-link"></i></sup></a>
             </h4>
             <h5 class="education-degree secondary">Candidate for Bachelor of Computer Science</h5>
             <h5 class="education-time tertiary">Apr 2014 (Expected)</h5>
@@ -640,7 +663,7 @@
         <div class="row">
           <section id="interest-stackoverflow" class="interest subsection item-grid third-width">
             <header>
-              <h4><a href="http://stackoverflow.com/users/1405830/" target="_blank">Stack Overflow</a></h4>
+              <h4><a href="http://stackoverflow.com/users/1405830/" target="_blank"><span id="interest-so-stack">Stack</span> Overflow<sup><i class="fa fa-external-link"></i></sup></a></h4>
             </header>
 
             <ul class="details">
@@ -659,17 +682,17 @@
             <ul class="details">
               <li>
                 <a href="http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X" target="_blank">
-                  <em>The Pragmatic Programmer</em> -&nbsp;Andrew&nbsp;Hunt&nbsp;&amp;&nbsp;David&nbsp;Thomas
+                  <em>The Pragmatic Programmer</em> -&nbsp;Andrew&nbsp;Hunt&nbsp;&amp;&nbsp;David&nbsp;Thomas<sup><i class="fa fa-external-link"></i></sup>
                 </a>
               </li>
               <li>
                 <a href="http://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654" target="_blank">
-                  <em>The Design of Everyday Things</em> -&nbsp;Don&nbsp;Norman
+                  <em>The Design of Everyday Things</em> -&nbsp;Don&nbsp;Norman<sup><i class="fa fa-external-link"></i></sup>
                 </a>
               </li>
               <li>
                 <a href="http://www.amazon.ca/Dont-Make-Me-Think-Usability/dp/0321344758" target="_blank">
-                  <em>Don't Make Me Think</em> -&nbsp;Steve&nbsp;Krug
+                  <em>Don't Make Me Think</em> -&nbsp;Steve&nbsp;Krug<sup><i class="fa fa-external-link"></i></sup>
                 </a>
               </li>
             </ul>
