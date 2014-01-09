@@ -158,41 +158,30 @@
         margin: 2em 0;
       }
 
-      .skill,
-      .experience,
-      .project,
-      .education,
-      .interest {
+      .subsection {
         margin-top: 1em;
       }
 
-      .experience li,
-      .project li,
-      .education li {
-        list-style-type: disc;
-        margin-left: 2em;
-      }
-
-      .skill,
-      .skill header,
-      .skill .details,
-      .interest,
-      .interest header,
-      .interest .details {
+      .item-grid,
+      .item-grid header,
+      .item-grid .details {
         float: left;
         box-sizing: border-box;
       }
-      .skill header,
-      .interest header {
+      .item-grid header {
         width: 40%;
         padding-right: 10px;
         text-align: right;
       }
-      .skill .details,
-      .interest .details {
+      .item-grid .details {
         width: 60%;
         padding-left: 10px;
         padding-top: 4px;
+      }
+
+      .item-list li {
+        list-style-type: disc;
+        margin-left: 2em;
       }
 
       /* CONTENT */
@@ -327,7 +316,7 @@
         </header>
 
         <div class="row">
-          <section id="skills-design" class="skill third-width">
+          <section id="skills-design" class="skill subsection item-grid third-width">
             <header>
               <h4>Web Design</h4>
             </header>
@@ -338,7 +327,7 @@
             </ul>
           </section>
 
-          <section id="skills-javascript" class="skill two-third-width">
+          <section id="skills-javascript" class="skill subsection item-grid two-third-width">
             <header>
               <h4>JavaScript</h4>
             </header>
@@ -352,7 +341,7 @@
         </div>
 
         <div class="row">
-          <section id="skills-ruby" class="skill third-width">
+          <section id="skills-ruby" class="skill subsection item-grid third-width">
             <header>
               <h4>Ruby</h4>
             </header>
@@ -364,7 +353,7 @@
             </ul>
           </section>
 
-          <section id="skills-tools" class="skill two-third-width">
+          <section id="skills-tools" class="skill subsection item-grid two-third-width">
             <header>
               <h4>Tools</h4>
             </header>
@@ -382,7 +371,7 @@
             <h2>Experience</h2>
         </header>
 
-        <section class="experience">
+        <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization">
               <a href="https://twitter.com/" target="_blank">Twitter</a>
@@ -398,7 +387,7 @@
           </ul>
         </section>
 
-        <section class="experience">
+        <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization">
               <a href="http://copious.com/" target="_blank">Copious</a>
@@ -414,7 +403,7 @@
           </ul>
         </section>
 
-        <section class="experience">
+        <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization">
               <a href="http://www.skywave.com/" target="_blank">SkyWave</a>
@@ -431,7 +420,7 @@
           </ul>
         </section>
 
-        <section class="experience">
+        <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization">
               <a href="http://www.skywave.com/" target="_blank">SkyWave</a>
@@ -447,7 +436,7 @@
           </ul>
         </section>
 
-        <section class="experience">
+        <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization">
               <a href="http://www.skywave.com/" target="_blank">IBM Canada</a>
@@ -463,7 +452,7 @@
           </ul>
         </section>
 
-        <section class="experience">
+        <section class="experience subsection item-list">
           <header>
             <h4 class="experience-organization">
               <a href="http://www.ibm.com/ca/" target="_blank">Ramsoft</a>
@@ -479,12 +468,12 @@
         </section>
       </section>
 
-      <section id="projects" class="section">
+      <section id="projects" class="section item-list">
         <header>
           <h2>Projects</h2>
         </header>
 
-        <section class="project">
+        <section class="project subsection">
           <header>
             <h4 class="project-title">
               <a href="https://github.com/zhihaojia/colorhack" target="_blank">ColorHack</a>
@@ -500,7 +489,7 @@
           </ul>
         </section>
 
-        <section class="project">
+        <section class="project subsection item-list">
           <header>
             <h4 class="project-title">
               OS/161
@@ -517,7 +506,7 @@
           </ul>
         </section>
 
-        <section class="project">
+        <section class="project subsection item-list">
           <header>
             <h4 class="project-title">
               SimpleCanvas
@@ -539,7 +528,7 @@
           <h2>Education</h2>
         </header>
 
-        <section class="education">
+        <section class="education subsection item-list">
           <header>
             <h4 class="education-organization">
               University of Waterloo
@@ -561,7 +550,7 @@
         </header>
 
         <div class="row">
-          <section id="interest-activities" class="interest third-width">
+          <section id="interest-activities" class="interest subsection item-grid third-width">
             <header>
               <h4>Activities</h4>
             </header>
@@ -576,7 +565,7 @@
             </ul>
           </section>
 
-          <section id="interest-stackoverflow" class="interest two-third-width">
+          <section id="interest-stackoverflow" class="interest subsection item-grid two-third-width">
             <header>
               <h4><a href="http://stackoverflow.com/users/1405830/" target="_blank">Stack Overflow</a></h4>
             </header>
@@ -592,7 +581,7 @@
         </div>
 
         <div class="row">
-          <section id="interest-news" class="interest third-width">
+          <section id="interest-news" class="interest subsection item-grid third-width">
             <header>
               <h4>News</h4>
             </header>
@@ -607,7 +596,7 @@
             </ul>
           </section>
 
-          <section id="interest-books" class="interest two-third-width">
+          <section id="interest-books" class="interest subsection item-grid two-third-width">
             <header>
               <h4>Books</h4>
             </header>
