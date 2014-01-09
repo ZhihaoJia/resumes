@@ -179,6 +179,15 @@
         padding-top: 4px;
       }
 
+      .item-grid.two-third-width header,
+      .item-grid.three-quarter-width header {
+        width: 30%
+      }
+      .item-grid.two-third-width .details,
+      .item-grid.three-quarter-width .details {
+        width: 70%;
+      }
+
       .item-list li {
         list-style-type: disc;
         margin-left: 2em;
@@ -335,14 +344,15 @@
         </header>
 
         <div class="row">
-          <section id="skills-design" class="skill subsection item-grid third-width">
+          <section id="skills-ruby" class="skill subsection item-grid third-width">
             <header>
-              <h4>Web Design</h4>
+              <h4>Ruby</h4>
             </header>
 
             <ul class="details">
-              <li>HTML5</li>
-              <li>CSS3, Sass</li>
+              <li>Rails</li>
+              <li>RSpec</li>
+              <li>Konacha</li>
             </ul>
           </section>
 
@@ -360,15 +370,14 @@
         </div>
 
         <div class="row">
-          <section id="skills-ruby" class="skill subsection item-grid third-width">
+          <section id="skills-design" class="skill subsection item-grid third-width">
             <header>
-              <h4>Ruby</h4>
+              <h4>Web Design</h4>
             </header>
 
             <ul class="details">
-              <li>Rails</li>
-              <li>RSpec</li>
-              <li>Konacha</li>
+              <li>HTML5</li>
+              <li>CSS3, Sass</li>
             </ul>
           </section>
 
@@ -550,7 +559,7 @@
         <section class="education subsection item-list">
           <header>
             <h4 class="education-organization primary">
-              University of Waterloo
+              <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>
             </h4>
             <div>
               <h5 class="education-degree secondary">Candidate for Bachelor of Computer Science</h5>
@@ -575,16 +584,33 @@
             </header>
 
             <ul class="details">
-              <li>UI, UX</li>
+              <li>UI</li>
+              <li>UX</li>
               <li>Music</li>
               <li>Reading</li>
               <li>Table tennis</li>
               <li>League of Legends</li>
-              <li>Om nom nom</li>
             </ul>
           </section>
 
-          <section id="interest-stackoverflow" class="interest subsection item-grid two-third-width">
+          <section id="interest-news" class="interest subsection item-grid two-third-width">
+            <header>
+              <h4>News</h4>
+            </header>
+
+            <ul class="details">
+              <li>Hacker News</li>
+              <li>TechCrunch</li>
+              <li>Mashable!</li>
+              <li>Wired</li>
+              <li>VentureBeat</li>
+              <li>GigaOM</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="row">
+          <section id="interest-stackoverflow" class="interest subsection item-grid third-width">
             <header>
               <h4><a href="http://stackoverflow.com/users/1405830/" target="_blank">Stack Overflow</a></h4>
             </header>
@@ -594,24 +620,6 @@
               <li>CSS</li>
               <li>JavaScript</li>
               <li>jQuery</li>
-              <li>Others</li>
-            </ul>
-          </section>
-        </div>
-
-        <div class="row">
-          <section id="interest-news" class="interest subsection item-grid third-width">
-            <header>
-              <h4>News</h4>
-            </header>
-
-            <ul class="details">
-              <li>Hacker News</li>
-              <li>TechCrunch</li>
-              <li>VentureBeat</li>
-              <li>Mashable!</li>
-              <li>Wired</li>
-              <li>GigaOM</li>
             </ul>
           </section>
 
@@ -623,17 +631,17 @@
             <ul class="details">
               <li>
                 <a href="http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X" target="_blank">
-                  The Pragmatic Programmer -&nbsp;Andrew&nbsp;Hunt&nbsp;&amp;&nbsp;David&nbsp;Thomas
+                  <em>The Pragmatic Programmer</em> -&nbsp;Andrew&nbsp;Hunt&nbsp;&amp;&nbsp;David&nbsp;Thomas
                 </a>
               </li>
               <li>
                 <a href="http://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654" target="_blank">
-                  The Design of Everyday Things -&nbsp;Don&nbsp;Norman
+                  <em>The Design of Everyday Things</em> -&nbsp;Don&nbsp;Norman
                 </a>
               </li>
               <li>
                 <a href="http://www.amazon.ca/Dont-Make-Me-Think-Usability/dp/0321344758" target="_blank">
-                  Don't Make Me Think -&nbsp;Steve&nbsp;Krug
+                  <em>Don't Make Me Think</em> -&nbsp;Steve&nbsp;Krug
                 </a>
               </li>
             </ul>
