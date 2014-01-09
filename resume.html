@@ -183,6 +183,10 @@
         list-style-type: disc;
         margin-left: 2em;
       }
+      .item-list .secondary,
+      .item-list .tertiary {
+        line-height: 1.3em;
+      }
       .item-list .secondary {
         display: inline-block;
       }
@@ -242,6 +246,9 @@
 
       /* Print media */
       @media print {
+        .noprint {
+          display: none !important;
+        }
       }
     </style>
 
@@ -324,7 +331,7 @@
 
       <section id="skills" class="section clearfix">
         <header>
-          <h2>Skills</h2>
+          <h3>Skills</h3>
         </header>
 
         <div class="row">
@@ -380,7 +387,7 @@
 
       <section id="experience" class="section">
         <header>
-            <h2>Experience</h2>
+            <h3>Experience</h3>
         </header>
 
         <section class="experience subsection item-list">
@@ -482,7 +489,7 @@
 
       <section id="projects" class="section item-list">
         <header>
-          <h2>Projects</h2>
+          <h3>Projects</h3>
         </header>
 
         <section class="project subsection">
@@ -537,7 +544,7 @@
 
       <section id="education" class="section">
         <header>
-          <h2>Education</h2>
+          <h3>Education</h3>
         </header>
 
         <section class="education subsection item-list">
@@ -558,7 +565,7 @@
 
       <section id="interests" class="section clearfix">
         <header>
-          <h2>Interests</h2>
+          <h3>Interests</h3>
         </header>
 
         <div class="row">
