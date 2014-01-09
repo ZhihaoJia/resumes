@@ -148,6 +148,11 @@
         clear: both;
       }
 
+      .row {
+        float: left;
+        width: 100%;
+      }
+
       /* GENERAL */
       .section {
         margin: 2em 0;
@@ -156,7 +161,8 @@
       .skill,
       .experience,
       .project,
-      .education {
+      .education,
+      .interest {
         margin-top: 1em;
       }
 
@@ -167,6 +173,27 @@
         margin-left: 2em;
       }
 
+      .skill,
+      .skill header,
+      .skill .details,
+      .interest,
+      .interest header,
+      .interest .details {
+        float: left;
+        box-sizing: border-box;
+      }
+      .skill header,
+      .interest header {
+        width: 40%;
+        padding-right: 10px;
+        text-align: right;
+      }
+      .skill .details,
+      .interest .details {
+        width: 60%;
+        padding-left: 10px;
+        padding-top: 4px;
+      }
 
       /* CONTENT */
       #content {
@@ -198,21 +225,7 @@
       }
 
       /* SKILLS */
-      .skill,
-      .skill header,
-      .skill .skill-details {
-        float: left;
-        box-sizing: border-box;
-      }
-      .skill header {
-        width: 40%;
-        padding-right: 10px;
-        text-align: right;
-      }
-      .skill .skill-details {
-        width: 60%;
-        padding-left: 10px;
-      }
+
 
       /* EXPERIENCE */
 
@@ -313,51 +326,55 @@
           <h2>Skills</h2>
         </header>
 
-        <section id="skills-design" class="skill quarter-width">
-          <header>
-            <h4>Web Design</h4>
-          </header>
+        <div class="row">
+          <section id="skills-design" class="skill third-width">
+            <header>
+              <h4>Web Design</h4>
+            </header>
 
-          <ul class="skill-details">
-            <li>HTML5</li>
-            <li>CSS3, Sass</li>
-          </ul>
-        </section>
+            <ul class="details">
+              <li>HTML5</li>
+              <li>CSS3, Sass</li>
+            </ul>
+          </section>
 
-        <section id="skills-javascript" class="skill three-quarter-width">
-          <header>
-            <h4>JavaScript</h4>
-          </header>
+          <section id="skills-javascript" class="skill two-third-width">
+            <header>
+              <h4>JavaScript</h4>
+            </header>
 
-          <ul class="skill-details">
-            <li>Backbone.js, Angular.js, Mustache</li>
-            <li>jQuery, jQuery UI, Underscore.js, Bootstrap</li>
-            <li>Jasmine, Mocha, Chai, Konacha, Sinon.js</li>
-          </ul>
-        </section>
+            <ul class="details">
+              <li>Backbone.js, Angular.js, Mustache</li>
+              <li>jQuery, jQuery UI, Underscore.js, Bootstrap</li>
+              <li>Jasmine, Mocha, Chai, Konacha, Sinon.js</li>
+            </ul>
+          </section>
+        </div>
 
-        <section id="skills-ruby" class="skill quarter-width">
-          <header>
-            <h4>Ruby</h4>
-          </header>
+        <div class="row">
+          <section id="skills-ruby" class="skill third-width">
+            <header>
+              <h4>Ruby</h4>
+            </header>
 
-          <ul class="skill-details">
-            <li>Rails</li>
-            <li>RSpec</li>
-            <li>Konacha</li>
-          </ul>
-        </section>
+            <ul class="details">
+              <li>Rails</li>
+              <li>RSpec</li>
+              <li>Konacha</li>
+            </ul>
+          </section>
 
-        <section id="skills-tools" class="skill three-quarter-width">
-          <header>
-            <h4>Tools</h4>
-          </header>
+          <section id="skills-tools" class="skill two-third-width">
+            <header>
+              <h4>Tools</h4>
+            </header>
 
-          <ul class="skill-details">
-            <li>Vim, Sublime Text, Visual Studio, Eclipse</li>
-            <li>Git, Mercurial, SVN</li>
-          </ul>
-        </section>
+            <ul class="details">
+              <li>Vim, Sublime Text, Visual Studio, Eclipse</li>
+              <li>Git, Mercurial, SVN</li>
+            </ul>
+          </section>
+        </div>
       </section>
 
       <section id="experience" class="section">
@@ -375,7 +392,7 @@
               <h5 class="experience-date">Aug 2013 - Dec 2013</h5>
             </div>
           </header>
-          <ul class="experience-details">
+          <ul class="details">
             <li>Part of the Ads ROI (Return On Investment) team.</li>
             <li>Worked on projects to provide more advanced ad analytics, decrease CPI, and increase conversion rates of ads.</li>
           </ul>
@@ -391,7 +408,7 @@
               <h5 class="experience-date">Jan 2013 - Apr 2013</h5>
             </div>
           </header>
-          <ul class="experience-details">
+          <ul class="details">
             <li>Developed, fixed, and made enhancements to key features and components of online social marketplace, including infinite scrolling, listing modals, custom typeaheads, and browser URL/history management.</li>
             <li>Implemented a system used to handle social content in comments, such as @mentions and #hashtags.</li>
           </ul>
@@ -407,7 +424,7 @@
               <h5 class="experience-date">Apr 2012 - Aug 2012</h5>
             </div>
           </header>
-          <ul class="experience-details">
+          <ul class="details">
             <li>Added major features to the internal issue management website, such user administration, advanced search capabilities, and search management.</li>
             <li>Enhanced and maintained the internal product admin, data tracking, and issue management websites.</li>
             <li>Researched third-party technologies for integration with company products.</li>
@@ -424,7 +441,7 @@
               <h5 class="experience-date">Aug 2011 - Dec 2011</h5>
             </div>
           </header>
-          <ul class="experience-details">
+          <ul class="details">
             <li>Built a company-wide, internal issue management system from the ground up under minimal supervision.</li>
             <li>Developed plugins for integrating multiple version control systems with the internal issue management system.</li>
           </ul>
@@ -440,7 +457,7 @@
               <h5 class="experience-date">Jan 2011 - Apr 2011</h5>
             </div>
           </header>
-          <ul class="experience-details">
+          <ul class="details">
             <li>Tested, troubleshooted, and wrote publicly-visible documentation for the Cognos 8 BI (Business Intelligence) product.</li>
             <li>Provided technical support for live production, development, and test systems.</li>
           </ul>
@@ -456,7 +473,7 @@
               <h5 class="experience-date">May 2010 - Aug 2010</h5>
             </div>
           </header>
-          <ul class="experience-details">
+          <ul class="details">
             <li>Tested, troubleshooted, and wrote documentation for RIS/PACS software solutions.</li>
           </ul>
         </section>
@@ -477,7 +494,7 @@
               <h5 class="project-date">Sep 2012 - Present</h5>
             </div>
           </header>
-          <ul class="project-details">
+          <ul class="details">
             <li>Provides a GUI for dynamically changing element colors and developing color schemes from the browser.</li>
             <li>Useful for quickly designing and prototyping web pages.</li>
           </ul>
@@ -493,7 +510,7 @@
               <h5 class="project-date">Sep 2012 - Dec 2012</h5>
             </div>
           </header>
-          <ul class="project-details">
+          <ul class="details">
             <li>Group: Jasper Berrington, Tanpreet Grewal, Zhihao Jia.</li>
             <li>Simple operating system based on OS/161 from Harvard University.</li>
             <li>Added functionality include kernel synchronization mechanisms, system calls, exception handling, PID management, virtual and physical memory management (TLB, page loading, page replacement, etc.).</li>
@@ -510,7 +527,7 @@
               <h5 class="project-date">Apr 2012 - Aug 2012</h5>
             </div>
           </header>
-          <ul class="project-details">
+          <ul class="details">
             <li>Web painting application using the HTML5 canvas element, with limited undo/redo functionality.</li>
             <li>Challenge: provide functionality similar to common paint apps using only one canvas element.</li>
           </ul>
@@ -532,79 +549,76 @@
               <h5 class="education-time">In Progress</h5>
             </div>
           </header>
-          <ul class="education-details">
+          <ul class="details">
             <li>Enrolled in the Honours Bioinformatics Option.</li>
           </ul>
         </section>
       </section>
 
-      <section id="interests" class="section">
+      <section id="interests" class="section clearfix">
         <header>
           <h2>Interests</h2>
         </header>
 
-        <section id="interest-special" class="interest">
-          <header>
-            <h4>Special Interests</h4>
-          </header>
+        <div class="row">
+          <section id="interest-activities" class="interest third-width">
+            <header>
+              <h4>Activities</h4>
+            </header>
 
-          <ul class="interest-details">
-            <li>UI, UX, front-end web development, pandas</li>
-          </ul>
-        </section>
+            <ul class="details">
+              <li>UI, UX</li>
+              <li>Music</li>
+              <li>Reading</li>
+              <li>Table tennis</li>
+              <li>League of Legends</li>
+              <li>Om nom nom</li>
+            </ul>
+          </section>
 
-        <section id="interest-activities" class="interest">
-          <header>
-            <h4>Activities</h4>
-          </header>
+          <section id="interest-stackoverflow" class="interest two-third-width">
+            <header>
+              <h4><a target="_blank" href="http://stackoverflow.com/users/1405830/">Stack Overflow</a></h4>
+            </header>
 
-          <ul class="interest-details">
-            <li>Music</li>
-            <li>Reading</li>
-            <li>Table tennis</li>
-            <li>Starcraft 2</li>
-            <li>League of Legends</li>
-            <li>Om nom nom</li>
-          </ul>
-        </section>
+            <ul class="details">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>Others</li>
+            </ul>
+          </section>
+        </div>
 
-        <section id="interest-books" class="interest">
-          <header>
-            <h4>Books</h4>
-          </header>
+        <div class="row">
+          <section id="interest-news" class="interest third-width">
+            <header>
+              <h4>News</h4>
+            </header>
 
-          <ul class="interest-details">
-            <li>The Pragmatic Programmer - Andrew Hunt &amp; David Thomas</li>
-            <li>The Design of Everyday Things - Don Norman</li>
-            <li>Don't Make Me Think - Steve Krug</li>
-          </ul>
-        </section>
+            <ul class="details">
+              <li>Hacker News</li>
+              <li>TechCrunch</li>
+              <li>VentureBeat</li>
+              <li>Mashable!</li>
+              <li>Wired</li>
+              <li>GigaOM</li>
+            </ul>
+          </section>
 
-        <section id="interest-news" class="interest">
-          <header>
-            <h4>News</h4>
-          </header>
+          <section id="interest-books" class="interest two-third-width">
+            <header>
+              <h4>Books</h4>
+            </header>
 
-          <ul class="interest-details">
-            <li>Hacker News</li>
-            <li>TechCrunch</li>
-            <li>VentureBeat</li>
-            <li>Mashable!</li>
-            <li>Wired</li>
-            <li>GigaOM</li>
-          </ul>
-        </section>
-
-        <section id="interest-stackoverflow" class="interest">
-          <header>
-            <h4>Stack Overflow</h4>
-          </header>
-
-          <ul class="interest-details">
-            <li><a target="_blank" href="http://stackoverflow.com/users/1405830/">Active user</a></li>
-            <li>HTML, CSS, JavaScript, jQuery, others</li>
-          </ul>
-        </section>
+            <ul class="details">
+              <li>The Pragmatic Programmer - Andrew Hunt &amp; David Thomas</li>
+              <li>The Design of Everyday Things - Don Norman</li>
+              <li>Don't Make Me Think - Steve Krug</li>
+            </ul>
+          </section>
+        </div>
       </section>
     </section>
   </body>
