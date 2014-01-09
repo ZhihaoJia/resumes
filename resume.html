@@ -183,6 +183,18 @@
         list-style-type: disc;
         margin-left: 2em;
       }
+      .item-list .secondary {
+        display: inline-block;
+      }
+      .item-list .tertiary {
+        float: right;
+      }
+      .item-list .details {
+        margin-top: 0.3em;
+      }
+      .item-list .details li + li {
+        margin-top: 0.1em;
+      }
 
       /* CONTENT */
       #content {
@@ -195,7 +207,7 @@
       }
 
       /* ME */
-      .me-primary {
+      #me .primary {
         display: inline-block;
       }
       #contact,
@@ -279,7 +291,7 @@
   <body>
     <section id="content">
       <header id="me" class="section">
-        <div class="me-primary">
+        <div class="primary">
           <h1 id="name">Zhihao Jia</h1>
 
           <section id="links">
@@ -373,12 +385,12 @@
 
         <section class="experience subsection item-list">
           <header>
-            <h4 class="experience-organization">
+            <h4 class="experience-organization primary">
               <a href="https://twitter.com/" target="_blank">Twitter</a>
             </h4>
             <div>
-              <h5 class="experience-position">Software Engineer Intern</h5>
-              <h5 class="experience-date">Aug 2013 - Dec 2013</h5>
+              <h5 class="experience-position secondary">Software Engineer Intern</h5>
+              <h5 class="experience-date tertiary">Aug 2013 - Dec 2013</h5>
             </div>
           </header>
           <ul class="details">
@@ -389,12 +401,12 @@
 
         <section class="experience subsection item-list">
           <header>
-            <h4 class="experience-organization">
+            <h4 class="experience-organization primary">
               <a href="http://copious.com/" target="_blank">Copious</a>
             </h4>
             <div>
-              <h5 class="experience-position">Software Engineer Intern</h5>
-              <h5 class="experience-date">Jan 2013 - Apr 2013</h5>
+              <h5 class="experience-position secondary">Software Engineer Intern</h5>
+              <h5 class="experience-date tertiary">Jan 2013 - Apr 2013</h5>
             </div>
           </header>
           <ul class="details">
@@ -405,12 +417,12 @@
 
         <section class="experience subsection item-list">
           <header>
-            <h4 class="experience-organization">
+            <h4 class="experience-organization primary">
               <a href="http://www.skywave.com/" target="_blank">SkyWave</a>
             </h4>
             <div>
-              <h5 class="experience-position">Software Developer</h5>
-              <h5 class="experience-date">Apr 2012 - Aug 2012</h5>
+              <h5 class="experience-position secondary">Software Developer</h5>
+              <h5 class="experience-date tertiary">Apr 2012 - Aug 2012</h5>
             </div>
           </header>
           <ul class="details">
@@ -422,12 +434,12 @@
 
         <section class="experience subsection item-list">
           <header>
-            <h4 class="experience-organization">
+            <h4 class="experience-organization primary">
               <a href="http://www.skywave.com/" target="_blank">SkyWave</a>
             </h4>
             <div>
-              <h5 class="experience-position">Software Developer</h5>
-              <h5 class="experience-date">Aug 2011 - Dec 2011</h5>
+              <h5 class="experience-position secondary">Software Developer</h5>
+              <h5 class="experience-date tertiary">Aug 2011 - Dec 2011</h5>
             </div>
           </header>
           <ul class="details">
@@ -438,12 +450,12 @@
 
         <section class="experience subsection item-list">
           <header>
-            <h4 class="experience-organization">
+            <h4 class="experience-organization primary">
               <a href="http://www.skywave.com/" target="_blank">IBM Canada</a>
             </h4>
             <div>
-              <h5 class="experience-position">Technical Analyst</h5>
-              <h5 class="experience-date">Jan 2011 - Apr 2011</h5>
+              <h5 class="experience-position secondary">Technical Analyst</h5>
+              <h5 class="experience-date tertiary">Jan 2011 - Apr 2011</h5>
             </div>
           </header>
           <ul class="details">
@@ -454,12 +466,12 @@
 
         <section class="experience subsection item-list">
           <header>
-            <h4 class="experience-organization">
+            <h4 class="experience-organization primary">
               <a href="http://www.ibm.com/ca/" target="_blank">Ramsoft</a>
             </h4>
             <div>
-              <h5 class="experience-position">Software Quality Assurance Specialist</h5>
-              <h5 class="experience-date">May 2010 - Aug 2010</h5>
+              <h5 class="experience-position secondary">Software Quality Assurance Specialist</h5>
+              <h5 class="experience-date tertiary">May 2010 - Aug 2010</h5>
             </div>
           </header>
           <ul class="details">
@@ -475,12 +487,12 @@
 
         <section class="project subsection">
           <header>
-            <h4 class="project-title">
+            <h4 class="project-title primary">
               <a href="https://github.com/zhihaojia/colorhack" target="_blank">ColorHack</a>
             </h4>
             <div>
-              <h5 class="project-type">Javascript</h5>
-              <h5 class="project-date">Sep 2012 - Present</h5>
+              <h5 class="project-type secondary">Javascript</h5>
+              <h5 class="project-date tertiary">Sep 2012 - Present</h5>
             </div>
           </header>
           <ul class="details">
@@ -491,12 +503,12 @@
 
         <section class="project subsection item-list">
           <header>
-            <h4 class="project-title">
+            <h4 class="project-title primary">
               OS/161
             </h4>
             <div>
-              <h5 class="project-type">C &amp; Assembly</h5>
-              <h5 class="project-date">Sep 2012 - Dec 2012</h5>
+              <h5 class="project-type secondary">C &amp; Assembly</h5>
+              <h5 class="project-date tertiary">Sep 2012 - Dec 2012</h5>
             </div>
           </header>
           <ul class="details">
@@ -508,12 +520,12 @@
 
         <section class="project subsection item-list">
           <header>
-            <h4 class="project-title">
+            <h4 class="project-title primary">
               SimpleCanvas
             </h4>
             <div>
-              <h5 class="project-type">HTML5 &amp; JavaScript</h5>
-              <h5 class="project-date">Apr 2012 - Aug 2012</h5>
+              <h5 class="project-type secondary">HTML5 &amp; JavaScript</h5>
+              <h5 class="project-date tertiary">Apr 2012 - Aug 2012</h5>
             </div>
           </header>
           <ul class="details">
@@ -530,12 +542,12 @@
 
         <section class="education subsection item-list">
           <header>
-            <h4 class="education-organization">
+            <h4 class="education-organization primary">
               University of Waterloo
             </h4>
             <div>
-              <h5 class="education-degree">Candidate for Bachelor of Computer Science</h5>
-              <h5 class="education-time">In Progress</h5>
+              <h5 class="education-degree secondary">Candidate for Bachelor of Computer Science</h5>
+              <h5 class="education-time tertiary">In Progress</h5>
             </div>
           </header>
           <ul class="details">
