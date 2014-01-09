@@ -198,6 +198,9 @@
         list-style-type: disc;
         margin-left: 2em;
       }
+      .item-list header {
+        position: relative;
+      }
       .item-list .secondary,
       .item-list .tertiary {
         line-height: 1.3em;
@@ -206,7 +209,10 @@
         display: inline-block;
       }
       .item-list .tertiary {
-        float: right;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-align: right;
       }
       .item-list .details {
         margin-top: 0.3em;
@@ -429,10 +435,8 @@
             <h4 class="experience-organization primary">
               <a href="https://twitter.com/" target="_blank">Twitter</a>
             </h4>
-            <div>
-              <h5 class="experience-position secondary">Software Engineer Intern</h5>
-              <h5 class="experience-date tertiary">Aug 2013 - Dec 2013</h5>
-            </div>
+            <h5 class="experience-position secondary">Software Engineer Intern</h5>
+            <h5 class="experience-date tertiary">Aug 2013 - Dec 2013</h5>
           </header>
           <ul class="details">
             <li>Part of the Ads <span class="acronym">ROI</span> (Return On Investment) team.</li>
@@ -445,10 +449,8 @@
             <h4 class="experience-organization primary">
               <a href="http://copious.com/" target="_blank">Copious</a>
             </h4>
-            <div>
-              <h5 class="experience-position secondary">Software Engineer Intern</h5>
-              <h5 class="experience-date tertiary">Jan 2013 - Apr 2013</h5>
-            </div>
+            <h5 class="experience-position secondary">Software Engineer Intern</h5>
+            <h5 class="experience-date tertiary">Jan 2013 - Apr 2013</h5>
           </header>
           <ul class="details">
             <li>Developed, fixed, and made enhancements to key features and components of online social marketplace, including infinite scrolling, listing modals, custom typeaheads, and browser <span class="acronym">URL</span>/history management.</li>
@@ -461,9 +463,10 @@
             <h4 class="experience-organization primary">
               <a href="http://www.skywave.com/" target="_blank">SkyWave</a>
             </h4>
-            <div>
-              <h5 class="experience-position secondary">Software Developer</h5>
-              <h5 class="experience-date tertiary">Aug 2011 - Dec 2011, Apr 2012 - Aug 2012</h5>
+            <h5 class="experience-position secondary">Software Developer</h5>
+            <div class="tertiary">
+              <h5 class="experience-date">Apr 2012 - Aug 2012</h5>
+              <h5 class="experience-date">Aug 2011 - Dec 2011</h5>
             </div>
           </header>
           <ul class="details">
@@ -478,10 +481,8 @@
             <h4 class="experience-organization primary">
               <a href="http://www.skywave.com/" target="_blank">IBM Canada</a>
             </h4>
-            <div>
-              <h5 class="experience-position secondary">Technical Analyst</h5>
-              <h5 class="experience-date tertiary">Jan 2011 - Apr 2011</h5>
-            </div>
+            <h5 class="experience-position secondary">Technical Analyst</h5>
+            <h5 class="experience-date tertiary">Jan 2011 - Apr 2011</h5>
           </header>
           <ul class="details">
             <li>Tested, troubleshooted, and wrote publicly-visible documentation for the Cognos 8 <span class="acronym">BI</span> (Business Intelligence) product.</li>
@@ -494,10 +495,8 @@
             <h4 class="experience-organization primary">
               <a href="http://www.ibm.com/ca/" target="_blank">Ramsoft</a>
             </h4>
-            <div>
-              <h5 class="experience-position secondary">Software Quality Assurance Specialist</h5>
-              <h5 class="experience-date tertiary">May 2010 - Aug 2010</h5>
-            </div>
+            <h5 class="experience-position secondary">Software Quality Assurance Specialist</h5>
+            <h5 class="experience-date tertiary">May 2010 - Aug 2010</h5>
           </header>
           <ul class="details">
             <li>Tested, troubleshooted, and wrote documentation for <span class="acronym">RIS/PACS</span> software solutions.</li>
@@ -515,10 +514,8 @@
             <h4 class="project-title primary">
               <a href="https://github.com/zhihaojia/colorhack" target="_blank">ColorHack</a>
             </h4>
-            <div>
-              <h5 class="project-type secondary">Javascript</h5>
-              <h5 class="project-date tertiary">Sep 2012 - Present</h5>
-            </div>
+            <h5 class="project-type secondary">Javascript</h5>
+            <h5 class="project-date tertiary">Sep 2012 - Present</h5>
           </header>
           <ul class="details">
             <li>Provides a <span class="acronym">GUI</span> for dynamically changing element colors and developing color schemes from the browser.</li>
@@ -531,10 +528,8 @@
             <h4 class="project-title primary">
               OS/161
             </h4>
-            <div>
-              <h5 class="project-type secondary">C &amp; Assembly</h5>
-              <h5 class="project-date tertiary">Sep 2012 - Dec 2012</h5>
-            </div>
+            <h5 class="project-type secondary">C &amp; Assembly</h5>
+            <h5 class="project-date tertiary">Sep 2012 - Dec 2012</h5>
           </header>
           <ul class="details">
             <li>Group: Jasper Berrington, Tanpreet Grewal, Zhihao Jia.</li>
@@ -548,10 +543,8 @@
             <h4 class="project-title primary">
               SimpleCanvas
             </h4>
-            <div>
-              <h5 class="project-type secondary"><span class="acronym">HTML5</span> &amp; JavaScript</h5>
-              <h5 class="project-date tertiary">Apr 2012 - Aug 2012</h5>
-            </div>
+            <h5 class="project-type secondary"><span class="acronym">HTML5</span> &amp; JavaScript</h5>
+            <h5 class="project-date tertiary">Apr 2012 - Aug 2012</h5>
           </header>
           <ul class="details">
             <li>Web painting application using the <span class="acronym">HTML5</span> canvas element, with limited undo/redo functionality.</li>
@@ -570,10 +563,8 @@
             <h4 class="education-organization primary">
               <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>
             </h4>
-            <div>
-              <h5 class="education-degree secondary">Candidate for Bachelor of Computer Science</h5>
-              <h5 class="education-time tertiary">Apr 2014 (Expected)</h5>
-            </div>
+            <h5 class="education-degree secondary">Candidate for Bachelor of Computer Science</h5>
+            <h5 class="education-time tertiary">Apr 2014 (Expected)</h5>
           </header>
           <ul class="details">
             <li>Enrolled in the Honours Bioinformatics Option.</li>
