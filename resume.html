@@ -288,6 +288,8 @@
       /* SKILLS */
       #skills-design .details,
       #skills-tools .details {
+        /* Fix incorrect length separating border (vertical line)
+           due to inconsistent subtitle and content heights */
         padding-bottom: 10px;
       }
 
@@ -348,9 +350,21 @@
           font-size: 17px;
         }
 
+        #skills-design .details,
+        #skills-tools .details {
+          /* Remove fix for inconsistent subtitle and content heights */
+          padding-bottom: 0;
+        }
+
         #projects {
           /* Hack to push projects section title to second page */
           margin-top: 5em;
+        }
+
+        #interest-so-stack {
+          /* Remove unnecessary hack (since external link icons not shown for print) */
+          position: static;
+          left: 0;
         }
       }
     </style>
@@ -375,24 +389,6 @@
       footer,
       hgroup {
         display: block;
-      }
-    </style>
-    <![endif]-->
-
-    <!--[if IE 7]>
-    <style type="text/css">
-      #about #attributes {
-        margin-left:    0;
-      }
-      .box header .secondary {
-        margin-left:    0;
-      }
-      .box header .tertiary {
-        float:        none;
-      }
-      #education .box header .tertiary {
-        float:        none;
-        margin-top:     0;
       }
     </style>
     <![endif]-->
