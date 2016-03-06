@@ -196,12 +196,12 @@
         box-sizing: border-box;
       }
       .item-grid header {
-        width: 140px;
+        width: 100px;
         padding-right: 10px;
         text-align: right;
       }
       .item-grid .details {
-        width: auto;
+        width: calc(100% - 100px);
         padding-left: 10px;
         border-left: 2px solid;
       }
@@ -285,12 +285,13 @@
       }
 
       /* SKILLS */
-      #skills-design .details,
-      #skills-tools .details {
-        /* Fix incorrect length separating border (vertical line)
-           due to inconsistent subtitle and content heights */
-        padding-bottom: 10px;
+      .skill-type {
+        color: rgb(120,170,190);
       }
+      #skills-other .details {
+        /* For consistent height on skill subsection details */
+        height: 72px;
+      };
 
 
       /* EXPERIENCE */
@@ -421,51 +422,40 @@
         </header>
 
         <div class="row">
-          <section id="skills-ruby" class="skill subsection item-grid third-width">
+          <section id="skills-web" class="skill subsection item-grid full-width">
             <header>
-              <h4>Ruby</h4>
+              <h4>Web</h4>
             </header>
 
             <ul class="details">
-              <li>Rails</li>
-              <li>RSpec</li>
-              <li>Konacha</li>
-            </ul>
-          </section>
-
-          <section id="skills-javascript" class="skill subsection item-grid two-third-width">
-            <header>
-              <h4>JavaScript</h4>
-            </header>
-
-            <ul class="details">
-              <li>Backbone.js, Angular.js, Mustache</li>
-              <li>jQuery, jQuery UI, Underscore.js, Bootstrap</li>
-              <li>Jasmine, Mocha, Chai, Konacha, Sinon.js</li>
+              <li><span class="skill-type">UI:</span> <span class="acronym">HTML</span>, Mustache, <span class="acronym">CSS</span>, Less, Sass, Bootstrap, jQuery UI</li>
+              <li><span class="skill-type">JavaScript:</span> jQuery, Flight, Backbone, Angular, Underscore, Karma, Konacha, Jasmine, Mocha, Chai, Sinon</li>
+              <li><span class="skill-type">Server:</span> Rails, Scala, ASP.NET</li>
+              <li><span class="skill-type">Tools:</span> <span class="acronym">NPM</span>, Bower, Webpack, Selenium, Nightwatch, ESLint, JSLint, JSHint</li>
             </ul>
           </section>
         </div>
 
         <div class="row">
-          <section id="skills-design" class="skill subsection item-grid third-width">
-            <header>
-              <h4>Web Design</h4>
-            </header>
-
-            <ul class="details">
-              <li><span class="acronym">HTML5</span></li>
-              <li><span class="acronym">CSS3</span>, <span class="acronym">Sass</span></li>
-            </ul>
-          </section>
-
-          <section id="skills-tools" class="skill subsection item-grid two-third-width">
+          <section id="skills-tools" class="skill subsection item-grid half-width">
             <header>
               <h4>Tools</h4>
             </header>
 
             <ul class="details">
-              <li>Vim, Sublime Text</li>
-              <li>Git, Mercurial, <span class="acronym">SVN</span></li>
+              <li><span class="skill-type">Text editors/IDEs:</span> Vim, Sublime Text, IntelliJ</li>
+              <li><span class="skill-type">VCS:</span> Git, Mercurial, SVN</li>
+              <li></li>
+            </ul>
+          </section>
+
+          <section id="skills-other" class="skill subsection item-grid half-width">
+            <header>
+              <h4>Other</h4>
+            </header>
+
+            <ul class="details">
+              <li><span class="skill-type">Languages:</span> Java, C++, C#, Visual Basic, Python, R</li>
             </ul>
           </section>
         </div>
