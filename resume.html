@@ -328,6 +328,17 @@
         display: none;
       }
 
+      /* Reduce some margins to squeeze into one page */
+      .section {
+        margin: 1.5em 0;
+      }
+      .section:last-child {
+        margin-bottom: 0;
+      }
+      .subsection {
+        margin-top: 0.5em;
+      }
+
       #content {
         font-size: 14px;
         padding: 0 16px;
@@ -339,6 +350,9 @@
       #contact,
       #links {
         font-size: 17px;
+      }
+      #skills-other .details {
+        height: auto;
       }
     </style>
 
